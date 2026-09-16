@@ -1,0 +1,814 @@
+{
+  "images": [
+    {
+      "id": "agri-1",
+      "filename": "thanjavur-agriculture.jpg",
+      "caption": "Green paddy crop fields and farming in Thanjavur delta",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-10",
+      "latitude": 10.7870,
+      "longitude": 79.1378
+    },
+    {
+      "id": "agri-2",
+      "filename": "punjab-agriculture.jpg",
+      "caption": "Agricultural farmlands and crop harvest in Punjab",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-12",
+      "latitude": 30.9010,
+      "longitude": 75.8572
+    },
+    {
+      "id": "agri-3",
+      "filename": "marathwada-agriculture.jpg",
+      "caption": "Dry farmland and crop fields in Marathwada region",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-15",
+      "latitude": 19.8762,
+      "longitude": 75.3433
+    },
+    {
+      "id": "agri-4",
+      "filename": "karnataka-agriculture.jpg",
+      "caption": "Farmlands and green crop fields in Karnataka",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-18",
+      "latitude": 12.9716,
+      "longitude": 77.5946
+    },
+    {
+      "id": "agri-5",
+      "filename": "nashik-agriculture.jpg",
+      "caption": "Vineyards and farming fields in Nashik",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-20",
+      "latitude": 19.9975,
+      "longitude": 73.7898
+    },
+    {
+      "id": "agri-6",
+      "filename": "tamilnadu-agriculture.jpg",
+      "caption": "Agricultural land and crop cultivation in Tamil Nadu",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-22",
+      "latitude": 11.1271,
+      "longitude": 78.6569
+    },
+    {
+      "id": "agri-7",
+      "filename": "hariyana-agriculture.jpg",
+      "caption": "Crop rows and farming fields in Haryana",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-25",
+      "latitude": 29.0588,
+      "longitude": 76.0856
+    },
+    {
+      "id": "agri-8",
+      "filename": "mp-agriculture.jpg",
+      "caption": "Wide agricultural land and crops in Madhya Pradesh",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-28",
+      "latitude": 23.2599,
+      "longitude": 77.4126
+    },
+    {
+      "id": "agri-9",
+      "filename": "himachal-agriculture.jpg",
+      "caption": "Terraced farming fields in Himachal Pradesh",
+      "instrument": "ResourceSat-2",
+      "date": "2026-02-01",
+      "latitude": 31.1048,
+      "longitude": 77.1734
+    },
+    {
+      "id": "agri-10",
+      "filename": "rajasthan-agriculture.jpg",
+      "caption": "Farming and crop plots in dry regions of Rajasthan",
+      "instrument": "ResourceSat-2",
+      "date": "2026-02-03",
+      "latitude": 27.0238,
+      "longitude": 74.2179
+    },
+    {
+      "id": "disaster-1",
+      "filename": "chennai-flood-disaster.jpg",
+      "caption": "Flooded streets and water logging across Chennai city",
+      "instrument": "Cartosat-3",
+      "date": "2025-12-05",
+      "latitude": 13.0827,
+      "longitude": 80.2707
+    },
+    {
+      "id": "disaster-2",
+      "filename": "odisha-cyclone-disaster.jpg",
+      "caption": "Cyclone storm impact and damage along the Odisha coast",
+      "instrument": "Cartosat-3",
+      "date": "2025-10-12",
+      "latitude": 19.8135,
+      "longitude": 85.8312
+    },
+    {
+      "id": "disaster-3",
+      "filename": "wayanad-landslide-disaster.jpg",
+      "caption": "Landslide damage and mud flow in Wayanad hills",
+      "instrument": "Cartosat-3",
+      "date": "2025-07-30",
+      "latitude": 11.6854,
+      "longitude": 76.1320
+    },
+    {
+      "id": "disaster-4",
+      "filename": "uttarakhand-fire-disaster.jpg",
+      "caption": "Forest fire smoke and burn scars in Uttarakhand mountains",
+      "instrument": "ResourceSat-2",
+      "date": "2025-05-14",
+      "latitude": 30.0668,
+      "longitude": 79.0193
+    },
+    {
+      "id": "disaster-5",
+      "filename": "gujarat-earthquake-disaster.jpg",
+      "caption": "Earthquake affected area view and damage in Gujarat",
+      "instrument": "Cartosat-3",
+      "date": "2025-01-26",
+      "latitude": 23.2156,
+      "longitude": 69.6567
+    },
+    {
+      "id": "disaster-6",
+      "filename": "assam-flood-disaster.jpg",
+      "caption": "River flood water spreading across Assam plains",
+      "instrument": "Cartosat-3",
+      "date": "2025-08-15",
+      "latitude": 26.2006,
+      "longitude": 92.9376
+    },
+    {
+      "id": "disaster-7",
+      "filename": "andhra-cyclone-disaster.jpg",
+      "caption": "Cyclone impact and coastal damage in Andhra Pradesh",
+      "instrument": "Cartosat-3",
+      "date": "2025-11-20",
+      "latitude": 15.9129,
+      "longitude": 79.7400
+    },
+    {
+      "id": "disaster-8",
+      "filename": "kerala-landslide-disaster.jpg",
+      "caption": "Landslide affected hills and debris flow in Kerala",
+      "instrument": "Cartosat-3",
+      "date": "2025-08-10",
+      "latitude": 10.8505,
+      "longitude": 76.2711
+    },
+    {
+      "id": "disaster-9",
+      "filename": "himachal-fire-disaster.jpg",
+      "caption": "Forest fire smoke and woodland damage in Himachal Pradesh",
+      "instrument": "ResourceSat-2",
+      "date": "2025-06-05",
+      "latitude": 31.8384,
+      "longitude": 76.9734
+    },
+    {
+      "id": "disaster-10",
+      "filename": "nepal-earthquake-disaster.jpg",
+      "caption": "Earthquake impact and structural damage near Nepal border region",
+      "instrument": "Cartosat-3",
+      "date": "2025-04-12",
+      "latitude": 28.3949,
+      "longitude": 84.1240
+    },
+    {
+      "id": "urban-1",
+      "filename": "bengaluru-urban.jpg",
+      "caption": "Urban city buildings and concrete expansion in Bengaluru",
+      "instrument": "ResourceSat-2 LISS-4",
+      "date": "2026-02-14",
+      "latitude": 12.9716,
+      "longitude": 77.5946
+    },
+    {
+      "id": "urban-2",
+      "filename": "gift-city-urban.jpg",
+      "caption": "Smart city layout and modern buildings in GIFT City Gujarat",
+      "instrument": "ResourceSat-2 LISS-4",
+      "date": "2026-02-10",
+      "latitude": 23.1593,
+      "longitude": 72.6823
+    },
+    {
+      "id": "urban-3",
+      "filename": "mumbai-urban.jpg",
+      "caption": "Dense urban city buildings and road network in Mumbai",
+      "instrument": "ResourceSat-2 LISS-4",
+      "date": "2026-01-20",
+      "latitude": 19.0760,
+      "longitude": 72.8777
+    },
+    {
+      "id": "urban-4",
+      "filename": "hyderabad-urban.jpg",
+      "caption": "Commercial buildings and urban growth in Hyderabad",
+      "instrument": "ResourceSat-2 LISS-4",
+      "date": "2026-01-18",
+      "latitude": 17.3850,
+      "longitude": 78.4867
+    },
+    {
+      "id": "urban-5",
+      "filename": "delhi-urban.jpg",
+      "caption": "Residential colonies and urban layout in Delhi",
+      "instrument": "ResourceSat-2 LISS-4",
+      "date": "2026-01-15",
+      "latitude": 28.7041,
+      "longitude": 77.1025
+    },
+    {
+      "id": "urban-6",
+      "filename": "chennai-urban.jpg",
+      "caption": "City sprawl and infrastructure layout in Chennai",
+      "instrument": "ResourceSat-2 LISS-4",
+      "date": "2026-01-12",
+      "latitude": 13.0827,
+      "longitude": 80.2707
+    },
+    {
+      "id": "urban-7",
+      "filename": "navi-mumbai-urban.jpg",
+      "caption": "Planned township and urban area in Navi Mumbai",
+      "instrument": "ResourceSat-2 LISS-4",
+      "date": "2026-01-10",
+      "latitude": 19.0330,
+      "longitude": 73.0297
+    },
+    {
+      "id": "urban-8",
+      "filename": "kolkata-urban.jpg",
+      "caption": "Urban landscape and residential buildings in Kolkata",
+      "instrument": "ResourceSat-2 LISS-4",
+      "date": "2026-01-08",
+      "latitude": 22.5726,
+      "longitude": 88.3639
+    },
+    {
+      "id": "urban-9",
+      "filename": "pune-urban.jpg",
+      "caption": "City buildings and growing neighborhoods in Pune",
+      "instrument": "ResourceSat-2 LISS-4",
+      "date": "2026-01-05",
+      "latitude": 18.5204,
+      "longitude": 73.8567
+    },
+    {
+      "id": "urban-10",
+      "filename": "chandigarh-urban.jpg",
+      "caption": "Grid sector urban planning layout in Chandigarh",
+      "instrument": "ResourceSat-2 LISS-4",
+      "date": "2026-01-02",
+      "latitude": 30.7333,
+      "longitude": 76.7794
+    },
+    {
+      "id": "water-1",
+      "filename": "krs-water.jpg",
+      "caption": "Reservoir water storage level at Krishnarajasagara Dam",
+      "instrument": "EOS-06 OCM",
+      "date": "2026-01-20",
+      "latitude": 12.4259,
+      "longitude": 76.5723
+    },
+    {
+      "id": "water-2",
+      "filename": "dal-lake-water.jpg",
+      "caption": "Lake water and houseboat areas in Dal Lake Srinagar",
+      "instrument": "EOS-06 OCM",
+      "date": "2026-01-22",
+      "latitude": 34.0837,
+      "longitude": 74.8740
+    },
+    {
+      "id": "water-3",
+      "filename": "ganga-water.jpg",
+      "caption": "River flow and channel of the sacred Ganga river",
+      "instrument": "EOS-06 OCM",
+      "date": "2026-01-25",
+      "latitude": 25.3176,
+      "longitude": 82.9739
+    },
+    {
+      "id": "water-4",
+      "filename": "punjab-groundwater.jpg",
+      "caption": "Groundwater level and agricultural ponds in Punjab",
+      "instrument": "EOS-06 OCM",
+      "date": "2026-01-28",
+      "latitude": 31.1471,
+      "longitude": 75.3412
+    },
+    {
+      "id": "water-5",
+      "filename": "chilika-water.jpg",
+      "caption": "Lagoon water and wetland expanse in Chilika Lake Odisha",
+      "instrument": "EOS-06 OCM",
+      "date": "2026-02-01",
+      "latitude": 19.7153,
+      "longitude": 85.3473
+    },
+    {
+      "id": "water-6",
+      "filename": "tungabhadra-water.jpg",
+      "caption": "Reservoir water level in Tungabhadra Dam",
+      "instrument": "EOS-06 OCM",
+      "date": "2026-02-03",
+      "latitude": 15.2655,
+      "longitude": 76.4623
+    },
+    {
+      "id": "water-7",
+      "filename": "vembanad-lake-water.jpg",
+      "caption": "Backwaters and lake water expanse in Vembanad Lake Kerala",
+      "instrument": "EOS-06 OCM",
+      "date": "2026-02-05",
+      "latitude": 9.5986,
+      "longitude": 76.3853
+    },
+    {
+      "id": "water-8",
+      "filename": "brahmaputra-water.jpg",
+      "caption": "Wide river channel and water flow of the Brahmaputra",
+      "instrument": "EOS-06 OCM",
+      "date": "2026-02-08",
+      "latitude": 26.1445,
+      "longitude": 91.7362
+    },
+    {
+      "id": "water-9",
+      "filename": "rajasthan-groundwater.jpg",
+      "caption": "Water bodies and wells in dry parts of Rajasthan",
+      "instrument": "EOS-06 OCM",
+      "date": "2026-02-10",
+      "latitude": 26.9124,
+      "longitude": 75.7873
+    },
+    {
+      "id": "water-10",
+      "filename": "muthupet-lagoon-water.jpg",
+      "caption": "Coastal lagoon water and mangroves in Muthupet",
+      "instrument": "EOS-06 OCM",
+      "date": "2026-02-12",
+      "latitude": 10.3396,
+      "longitude": 79.4939
+    },
+    {
+      "id": "infra-1",
+      "filename": "highway-infrastructure.jpg",
+      "caption": "Expressway and multi-lane highway road network",
+      "instrument": "Cartosat-2",
+      "date": "2026-02-01",
+      "latitude": 28.6139,
+      "longitude": 77.2090
+    },
+    {
+      "id": "infra-2",
+      "filename": "mundra-port-infrastructure.jpg",
+      "caption": "Port terminal, docks, and cargo ships in Mundra Gujarat",
+      "instrument": "Cartosat-2",
+      "date": "2026-02-03",
+      "latitude": 22.8407,
+      "longitude": 69.7042
+    },
+    {
+      "id": "infra-3",
+      "filename": "bhadla-solar-infrastructure.jpg",
+      "caption": "Solar panel photovoltaic array park in Bhadla Rajasthan",
+      "instrument": "Cartosat-2",
+      "date": "2026-02-05",
+      "latitude": 27.5458,
+      "longitude": 71.9168
+    },
+    {
+      "id": "infra-4",
+      "filename": "airport-infrastructure.jpg",
+      "caption": "Airport runway, terminal buildings, and aircraft parking",
+      "instrument": "Cartosat-2",
+      "date": "2026-02-08",
+      "latitude": 12.9941,
+      "longitude": 77.7000
+    },
+    {
+      "id": "infra-5",
+      "filename": "railway-infrastructure.jpg",
+      "caption": "Railway tracks and station network yards",
+      "instrument": "Cartosat-2",
+      "date": "2026-02-10",
+      "latitude": 21.1458,
+      "longitude": 79.0882
+    },
+    {
+      "id": "infra-6",
+      "filename": "vadodara-highway.jpg",
+      "caption": "Expressway road infrastructure near Vadodara",
+      "instrument": "Cartosat-2",
+      "date": "2026-02-12",
+      "latitude": 22.3072,
+      "longitude": 73.1812
+    },
+    {
+      "id": "infra-7",
+      "filename": "visakhapatnam-port.jpg",
+      "caption": "Port harbor and shipping infrastructure in Visakhapatnam",
+      "instrument": "Cartosat-2",
+      "date": "2026-02-14",
+      "latitude": 17.6868,
+      "longitude": 83.2185
+    },
+    {
+      "id": "infra-8",
+      "filename": "rewa-solar.jpg",
+      "caption": "Solar power plant panels in Rewa Madhya Pradesh",
+      "instrument": "Cartosat-2",
+      "date": "2026-02-16",
+      "latitude": 24.5324,
+      "longitude": 81.3004
+    },
+    {
+      "id": "infra-9",
+      "filename": "lucknow-airport.jpg",
+      "caption": "Airport runway and infrastructure in Lucknow",
+      "instrument": "Cartosat-2",
+      "date": "2026-02-18",
+      "latitude": 26.7606,
+      "longitude": 80.8893
+    },
+    {
+      "id": "infra-10",
+      "filename": "darjeeling-railway.jpg",
+      "caption": "Mountain railway tracks passing through hills in Darjeeling",
+      "instrument": "Cartosat-2",
+      "date": "2026-02-20",
+      "latitude": 27.0410,
+      "longitude": 88.2663
+    },
+    {
+      "id": "env-1",
+      "filename": "delhi-environment.jpg",
+      "caption": "Urban heat island and smog over Delhi",
+      "instrument": "RISAT-1",
+      "date": "2026-01-18",
+      "latitude": 28.7041,
+      "longitude": 77.1025
+    },
+    {
+      "id": "env-2",
+      "filename": "gangetic-environment.jpg",
+      "caption": "Air quality particulate haze over the Gangetic plain",
+      "instrument": "RISAT-1",
+      "date": "2026-01-20",
+      "latitude": 26.8467,
+      "longitude": 80.9462
+    },
+    {
+      "id": "env-3",
+      "filename": "kerala-environment.jpg",
+      "caption": "Coastal erosion and shoreline changes in Kerala",
+      "instrument": "RISAT-1",
+      "date": "2026-01-22",
+      "latitude": 10.8505,
+      "longitude": 76.2711
+    },
+    {
+      "id": "env-4",
+      "filename": "himalaya-environment.jpg",
+      "caption": "Glacier retreat and mountain terrain in Himalayas",
+      "instrument": "RISAT-1",
+      "date": "2026-01-25",
+      "latitude": 32.0842,
+      "longitude": 77.5712
+    },
+    {
+      "id": "env-5",
+      "filename": "estuary-environment.jpg",
+      "caption": "Coastal estuary water and silt accumulation",
+      "instrument": "RISAT-1",
+      "date": "2026-01-28",
+      "latitude": 13.0827,
+      "longitude": 80.2707
+    },
+    {
+      "id": "env-6",
+      "filename": "mumbai-heat.jpg",
+      "caption": "Urban heat map and warm zones in Mumbai",
+      "instrument": "RISAT-1",
+      "date": "2026-02-01",
+      "latitude": 19.0760,
+      "longitude": 72.8777
+    },
+    {
+      "id": "env-7",
+      "filename": "delhi-air-quality.jpg",
+      "caption": "Smog and poor air quality haze over Delhi",
+      "instrument": "RISAT-1",
+      "date": "2026-02-03",
+      "latitude": 28.6139,
+      "longitude": 77.2090
+    },
+    {
+      "id": "env-8",
+      "filename": "odisha-coast-erosion.jpg",
+      "caption": "Coastline erosion and beach changes in Odisha",
+      "instrument": "RISAT-1",
+      "date": "2026-02-05",
+      "latitude": 19.8135,
+      "longitude": 85.8312
+    },
+    {
+      "id": "env-9",
+      "filename": "sikkim-glacier.jpg",
+      "caption": "Glacial ice melt and mountain peaks in Sikkim",
+      "instrument": "RISAT-1",
+      "date": "2026-02-08",
+      "latitude": 27.5330,
+      "longitude": 88.5122
+    },
+    {
+      "id": "env-10",
+      "filename": "kakinada-estuary.jpg",
+      "caption": "Estuary channel and coastal environment in Kakinada",
+      "instrument": "RISAT-1",
+      "date": "2026-02-10",
+      "latitude": 16.9891,
+      "longitude": 82.2475
+    },
+    {
+      "id": "mining-1",
+      "filename": "bellary-mining.jpg",
+      "caption": "Open cast iron ore mining pits near Bellary",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-15",
+      "latitude": 15.1394,
+      "longitude": 76.9214
+    },
+    {
+      "id": "mining-2",
+      "filename": "jharia-mining.jpg",
+      "caption": "Coal mining fields and excavation in Jharia",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-16",
+      "latitude": 23.7495,
+      "longitude": 86.4138
+    },
+    {
+      "id": "mining-3",
+      "filename": "jaisalmer-mining.jpg",
+      "caption": "Limestone quarrying and stone extraction in Jaisalmer",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-18",
+      "latitude": 26.9157,
+      "longitude": 70.9083
+    },
+    {
+      "id": "mining-4",
+      "filename": "korba-mining.jpg",
+      "caption": "Open pit coal mining area in Korba",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-20",
+      "latitude": 22.3595,
+      "longitude": 82.6833
+    },
+    {
+      "id": "mining-5",
+      "filename": "odisha-mining.jpg",
+      "caption": "Bauxite strip mining and pits in Odisha",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-22",
+      "latitude": 21.5793,
+      "longitude": 84.9432
+    },
+    {
+      "id": "mining-6",
+      "filename": "dhanbad-iron-ore.jpg",
+      "caption": "Iron ore and mining activity in Dhanbad",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-25",
+      "latitude": 23.7957,
+      "longitude": 86.4304
+    },
+    {
+      "id": "mining-7",
+      "filename": "singrauli-coal.jpg",
+      "caption": "Coal mining belt and open pits in Singrauli",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-28",
+      "latitude": 24.1989,
+      "longitude": 82.6687
+    },
+    {
+      "id": "mining-8",
+      "filename": "kota-limestone.jpg",
+      "caption": "Limestone quarry and stone mining near Kota",
+      "instrument": "ResourceSat-2",
+      "date": "2026-02-01",
+      "latitude": 25.2138,
+      "longitude": 75.8648
+    },
+    {
+      "id": "mining-9",
+      "filename": "balaghat-bauxite.jpg",
+      "caption": "Bauxite and manganese mining hills in Balaghat",
+      "instrument": "ResourceSat-2",
+      "date": "2026-02-03",
+      "latitude": 21.9840,
+      "longitude": 80.1873
+    },
+    {
+      "id": "mining-10",
+      "filename": "kolar-gold.jpg",
+      "caption": "Old gold mining shafts and land area in Kolar",
+      "instrument": "ResourceSat-2",
+      "date": "2026-02-05",
+      "latitude": 13.1360,
+      "longitude": 78.1292
+    },
+    {
+      "id": "ocean-1",
+      "filename": "kochi-ocean.jpg",
+      "caption": "Coastal sea water and waves near Kochi",
+      "instrument": "EOS-06 OCM",
+      "date": "2026-02-10",
+      "latitude": 9.9312,
+      "longitude": 76.2673
+    },
+    {
+      "id": "ocean-2",
+      "filename": "mumbai-ocean.jpg",
+      "caption": "Arabian sea water and coastal Mumbai shoreline",
+      "instrument": "EOS-06 OCM",
+      "date": "2026-02-12",
+      "latitude": 18.9220,
+      "longitude": 72.8347
+    },
+    {
+      "id": "ocean-3",
+      "filename": "andaman-ocean.jpg",
+      "caption": "Clear blue ocean water around Andaman islands",
+      "instrument": "EOS-06 OCM",
+      "date": "2026-02-14",
+      "latitude": 11.7401,
+      "longitude": 92.6586
+    },
+    {
+      "id": "ocean-4",
+      "filename": "chennai-ocean.jpg",
+      "caption": "Bay of Bengal coastal water near Chennai beach",
+      "instrument": "EOS-06 OCM",
+      "date": "2026-02-16",
+      "latitude": 13.0500,
+      "longitude": 80.2824
+    },
+    {
+      "id": "ocean-5",
+      "filename": "lakshadweep-ocean.jpg",
+      "caption": "Atolls, shallow blue water, and sea around Lakshadweep",
+      "instrument": "EOS-06 OCM",
+      "date": "2026-02-18",
+      "latitude": 10.5667,
+      "longitude": 72.6417
+    },
+    {
+      "id": "ocean-6",
+      "filename": "rameswaram-coral.jpg",
+      "caption": "Coral reef waters and shallow sea near Rameswaram",
+      "instrument": "EOS-06 OCM",
+      "date": "2026-02-20",
+      "latitude": 9.2881,
+      "longitude": 79.3129
+    },
+    {
+      "id": "ocean-7",
+      "filename": "mumbai-oil-spill.jpg",
+      "caption": "Coastal waters and maritime monitoring near Mumbai",
+      "instrument": "EOS-06 OCM",
+      "date": "2026-02-22",
+      "latitude": 18.9650,
+      "longitude": 72.8258
+    },
+    {
+      "id": "ocean-8",
+      "filename": "goa-upwelling.jpg",
+      "caption": "Coastal sea water patterns and ocean surface near Goa",
+      "instrument": "EOS-06 OCM",
+      "date": "2026-02-24",
+      "latitude": 15.2993,
+      "longitude": 74.1240
+    },
+    {
+      "id": "ocean-9",
+      "filename": "puri-coast.jpg",
+      "caption": "Beach coastline and sea waves in Puri",
+      "instrument": "EOS-06 OCM",
+      "date": "2026-02-26",
+      "latitude": 19.8135,
+      "longitude": 85.8312
+    },
+    {
+      "id": "ocean-10",
+      "filename": "tuticorin-fishing.jpg",
+      "caption": "Fishing harbor and coastal waters in Tuticorin",
+      "instrument": "EOS-06 OCM",
+      "date": "2026-02-28",
+      "latitude": 8.7642,
+      "longitude": 78.1348
+    },
+    {
+      "id": "forest-1",
+      "filename": "nilgiris-forest.jpg",
+      "caption": "Dense forest trees and canopy in the Nilgiris",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-28",
+      "latitude": 11.4102,
+      "longitude": 76.6950
+    },
+    {
+      "id": "forest-2",
+      "filename": "similipal-forest.jpg",
+      "caption": "Green forest trees and hills in Similipal",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-30",
+      "latitude": 21.9333,
+      "longitude": 86.3333
+    },
+    {
+      "id": "forest-3",
+      "filename": "western-ghats-forest.jpg",
+      "caption": "Thick green forest vegetation across Western Ghats",
+      "instrument": "ResourceSat-2",
+      "date": "2026-02-02",
+      "latitude": 15.0000,
+      "longitude": 74.0000
+    },
+    {
+      "id": "forest-4",
+      "filename": "sundarbans-forest.jpg",
+      "caption": "Mangrove forest trees and river delta in Sundarbans",
+      "instrument": "ResourceSat-2",
+      "date": "2026-02-05",
+      "latitude": 21.9497,
+      "longitude": 89.1833
+    },
+    {
+      "id": "forest-5",
+      "filename": "bandipur-forest.jpg",
+      "caption": "Deciduous woodland and wildlife forest in Bandipur",
+      "instrument": "ResourceSat-2",
+      "date": "2026-02-08",
+      "latitude": 11.8153,
+      "longitude": 76.6273
+    },
+    {
+      "id": "forest-6",
+      "filename": "tadoba-forest.jpg",
+      "caption": "Forest trees and tiger reserve woods in Tadoba",
+      "instrument": "ResourceSat-2",
+      "date": "2026-02-10",
+      "latitude": 20.2435,
+      "longitude": 79.3090
+    },
+    {
+      "id": "forest-7",
+      "filename": "bhitarkanika-mangrove.jpg",
+      "caption": "Mangrove forest and tidal creeks in Bhitarkanika",
+      "instrument": "ResourceSat-2",
+      "date": "2026-02-12",
+      "latitude": 20.6521,
+      "longitude": 86.8530
+    },
+    {
+      "id": "forest-8",
+      "filename": "corbett-fire.jpg",
+      "caption": "Forest woodland and dry trees in Jim Corbett",
+      "instrument": "ResourceSat-2",
+      "date": "2026-02-15",
+      "latitude": 29.5300,
+      "longitude": 78.7750
+    },
+    {
+      "id": "forest-9",
+      "filename": "munnar-plantation.jpg",
+      "caption": "Green tea plantation hills and vegetation in Munnar",
+      "instrument": "ResourceSat-2",
+      "date": "2026-02-18",
+      "latitude": 10.0889,
+      "longitude": 77.0595
+    },
+    {
+      "id": "forest-10",
+      "filename": "kaziranga-forest.jpg",
+      "caption": "Grasslands and forest wetlands in Kaziranga",
+      "instrument": "ResourceSat-2",
+      "date": "2026-02-20",
+      "latitude": 26.5775,
+      "longitude": 93.1711
+    }
+  ]
+}
