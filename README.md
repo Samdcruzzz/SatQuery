@@ -30,24 +30,27 @@ This is a **working demo** showcasing core functionality:
 ---
 
 ## 🏗️ Project Structure
+
+```
 SatQuery/
-├── api/ 
-│ ├── config.py 
-│ ├── index.py 
-│ ├── data
-│ │ ├── embeddings.json
-│ │ ├── metadata.json
-│ │ └── bundled_images.json
-│ └── generate_demo_images.py 
-├── public/ 
-│ ├── images/ 
-│ ├── AI Agent images/ 
-│ └── index.html 
-├── tools/ 
-│ ├── download_dataset.py
-│ └── embed_images.py
-├── requirements.txt  # Python dependencies
-└── README.md  # This file
+├── api/
+│   ├── config.py
+│   ├── index.py
+│   ├── data/
+│   │   ├── embeddings.json
+│   │   ├── metadata.json
+│   │   └── bundled_images.json
+│   └── generate_demo_images.py
+├── public/
+│   ├── images/
+│   ├── AI Agent images/
+│   └── index.html
+├── tools/
+│   ├── download_dataset.py
+│   └── embed_images.py
+├── requirements.txt
+└── README.md
+```
 
 
 
