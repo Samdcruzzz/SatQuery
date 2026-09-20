@@ -144,6 +144,11 @@ This project is open source and available under the MIT License.
 
 ## 📞 Questions?
 
+
+
+## Live Demo
+https://satquery-nu.vercel.app/
+
 Have questions about SatQuery? Open an issue on GitHub or reach out!
 
 ---
