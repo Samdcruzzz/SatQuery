@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SatQuery AI — Remote Sensing Console</title>
+<meta name="description" content="SatQuery AI is an Earth-observation remote-sensing console for ISRO analysts and field agencies — query Sentinel-1/2, Landsat and Cartosat imagery in plain language and get grounded, confidence-scored analysis." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  :root {
+    --void: #05070d;
+    --void-2: #090d17;
+    --panel: #0e1420;
+    --panel-raised: #131a2b;
+    --ink: #eceff6;
+    --muted: #8892a9;
+    --faint: #4c5673;
+    --line: #1f2840;
+    --line-soft: #161d31;
+    --copper: #c9784f;
+    --copper-soft: #e3a67c;
+    --copper-dim: #3a271c;
+    --jade: #7fb8a3;
+    --jade-dim: #1f2f2a;
+    --alert: #d97a6a;
+    --alert-dim: #3a2420;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    height: 100%;
+    background: var(--void);
+    color: var(--ink);
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    background-color: var(--void);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='360' height='360' viewBox='0 0 360 360'%3E%3Cg fill='%238892a9'%3E%3Ccircle cx='18' cy='24' r='1.6' fill-opacity='0.55'/%3E%3Ccircle cx='52' cy='9' r='0.7' fill-opacity='0.22'/%3E%3Ccircle cx='87' cy='41' r='1.1' fill-opacity='0.35'/%3E%3Ccircle cx='121' cy='16' r='0.6' fill-opacity='0.18'/%3E%3Ccircle cx='143' cy='63' r='1.9' fill-opacity='0.6'/%3E%3Ccircle cx='168' cy='27' r='0.8' fill-opacity='0.28'/%3E%3Ccircle cx='196' cy='52' r='0.6' fill-opacity='0.2'/%3E%3Ccircle cx='219' cy='8' r='1.3' fill-opacity='0.4'/%3E%3Ccircle cx='247' cy='38' r='0.7' fill-opacity='0.25'/%3E%3Ccircle cx='271' cy='19' r='1.7' fill-opacity='0.5'/%3E%3Ccircle cx='294' cy='57' r='0.6' fill-opacity='0.18'/%3E%3Ccircle cx='318' cy='31' r='1.0' fill-opacity='0.32'/%3E%3Ccircle cx='342' cy='12' r='0.7' fill-opacity='0.24'/%3E%3Ccircle cx='9' cy='79' r='0.9' fill-opacity='0.3'/%3E%3Ccircle cx='38' cy='98' r='1.4' fill-opacity='0.42'/%3E%3Ccircle cx='64' cy='114' r='0.6' fill-opacity='0.2'/%3E%3Ccircle cx='96' cy='89' r='2.1' fill-opacity='0.65'/%3E%3Ccircle cx='129' cy='121' r='0.7' fill-opacity='0.26'/%3E%3Ccircle cx='154' cy='96' r='1.0' fill-opacity='0.33'/%3E%3Ccircle cx='181' cy='132' r='0.6' fill-opacity='0.19'/%3E%3Ccircle cx='208' cy='104' r='1.5' fill-opacity='0.45'/%3E%3Ccircle cx='233' cy='87' r='0.7' fill-opacity='0.24'/%3E%3Ccircle cx='258' cy='118' r='0.9' fill-opacity='0.3'/%3E%3Ccircle cx='283' cy='96' r='0.6' fill-opacity='0.2'/%3E%3Ccircle cx='309' cy='128' r='1.8' fill-opacity='0.55'/%3E%3Ccircle cx='334' cy='103' r='0.7' fill-opacity='0.24'/%3E%3Ccircle cx='352' cy='79' r='1.1' fill-opacity='0.36'/%3E%3Ccircle cx='22' cy='153' r='0.6' fill-opacity='0.19'/%3E%3Ccircle cx='47' cy='171' r='1.3' fill-opacity='0.4'/%3E%3Ccircle cx='73' cy='149' r='0.7' fill-opacity='0.25'/%3E%3Ccircle cx='103' cy='178' r='0.9' fill-opacity='0.3'/%3E%3Ccircle cx='131' cy='158' r='2.0' fill-opacity='0.6'/%3E%3Ccircle cx='159' cy='189' r='0.6' fill-opacity='0.18'/%3E%3Ccircle cx='186' cy='163' r='1.2' fill-opacity='0.38'/%3E%3Ccircle cx='213' cy='196' r='0.7' fill-opacity='0.26'/%3E%3Ccircle cx='239' cy='171' r='0.9' fill-opacity='0.3'/%3E%3Ccircle cx='266' cy='149' r='1.6' fill-opacity='0.48'/%3E%3Ccircle cx='291' cy='183' r='0.6' fill-opacity='0.2'/%3E%3Ccircle cx='317' cy='161' r='1.0' fill-opacity='0.33'/%3E%3Ccircle cx='344' cy='192' r='0.7' fill-opacity='0.24'/%3E%3Ccircle cx='13' cy='214' r='1.1' fill-opacity='0.35'/%3E%3Ccircle cx='41' cy='236' r='0.6' fill-opacity='0.19'/%3E%3Ccircle cx='68' cy='209' r='1.7' fill-opacity='0.52'/%3E%3Ccircle cx='94' cy='247' r='0.7' fill-opacity='0.25'/%3E%3Ccircle cx='118' cy='219' r='0.9' fill-opacity='0.3'/%3E%3Ccircle cx='147' cy='253' r='0.6' fill-opacity='0.18'/%3E%3Ccircle cx='173' cy='227' r='1.4' fill-opacity='0.43'/%3E%3Ccircle cx='201' cy='241' r='0.7' fill-opacity='0.26'/%3E%3Ccircle cx='227' cy='216' r='1.9' fill-opacity='0.58'/%3E%3Ccircle cx='253' cy='251' r='0.6' fill-opacity='0.2'/%3E%3Ccircle cx='279' cy='229' r='1.0' fill-opacity='0.32'/%3E%3Ccircle cx='306' cy='207' r='0.7' fill-opacity='0.24'/%3E%3Ccircle cx='331' cy='238' r='1.3' fill-opacity='0.4'/%3E%3Ccircle cx='355' cy='219' r='0.6' fill-opacity='0.19'/%3E%3Ccircle cx='28' cy='279' r='0.9' fill-opacity='0.3'/%3E%3Ccircle cx='56' cy='299' r='0.6' fill-opacity='0.18'/%3E%3Ccircle cx='83' cy='271' r='1.6' fill-opacity='0.49'/%3E%3Ccircle cx='109' cy='308' r='0.7' fill-opacity='0.25'/%3E%3Ccircle cx='137' cy='283' r='1.0' fill-opacity='0.33'/%3E%3Ccircle cx='163' cy='316' r='0.6' fill-opacity='0.2'/%3E%3Ccircle cx='191' cy='291' r='2.1' fill-opacity='0.62'/%3E%3Ccircle cx='217' cy='307' r='0.7' fill-opacity='0.24'/%3E%3Ccircle cx='243' cy='279' r='0.9' fill-opacity='0.3'/%3E%3Ccircle cx='269' cy='313' r='0.6' fill-opacity='0.18'/%3E%3Ccircle cx='296' cy='288' r='1.4' fill-opacity='0.44'/%3E%3Ccircle cx='322' cy='301' r='0.7' fill-opacity='0.26'/%3E%3Ccircle cx='348' cy='276' r='1.1' fill-opacity='0.36'/%3E%3Ccircle cx='7' cy='334' r='0.6' fill-opacity='0.19'/%3E%3Ccircle cx='34' cy='349' r='1.2' fill-opacity='0.38'/%3E%3Ccircle cx='61' cy='327' r='0.7' fill-opacity='0.25'/%3E%3Ccircle cx='89' cy='343' r='0.9' fill-opacity='0.3'/%3E%3Ccircle cx='116' cy='321' r='1.8' fill-opacity='0.54'/%3E%3Ccircle cx='142' cy='352' r='0.6' fill-opacity='0.18'/%3E%3Ccircle cx='169' cy='334' r='1.0' fill-opacity='0.32'/%3E%3Ccircle cx='196' cy='348' r='0.7' fill-opacity='0.24'/%3E%3Ccircle cx='223' cy='329' r='1.5' fill-opacity='0.46'/%3E%3Ccircle cx='249' cy='343' r='0.6' fill-opacity='0.2'/%3E%3Ccircle cx='276' cy='324' r='0.9' fill-opacity='0.3'/%3E%3Ccircle cx='303' cy='351' r='0.7' fill-opacity='0.26'/%3E%3Ccircle cx='329' cy='333' r='1.3' fill-opacity='0.4'/%3E%3Ccircle cx='353' cy='347' r='0.6' fill-opacity='0.19'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 360px 360px;
+    background-repeat: repeat;
+  }
+
+  ::selection { background: var(--copper-dim); color: var(--copper-soft); }
+
+  :focus-visible {
+    outline: 2px solid var(--copper-soft);
+    outline-offset: 2px;
+  }
+
+  a { color: inherit; }
+  button { font: inherit; }
+
+  #app {
+    display: grid;
+    grid-template-columns: 272px 1fr;
+    min-height: 100vh;
+  }
+
+  /* ---------- LOG RAIL ---------- */
+  #rail {
+    border-right: 1px solid var(--line);
+    background: rgba(9, 13, 23, 0.7);
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  #rail-header {
+    padding: 24px 22px 16px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  #rail-header .mark {
+    font-family: 'Spectral', serif;
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+  }
+
+  #rail-header .mark .dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--jade);
+    box-shadow: 0 0 0 3px var(--jade-dim);
+    display: inline-block;
+  }
+
+  #rail-header .sub {
+    color: var(--muted);
+    font-size: 12.5px;
+    margin-top: 8px;
+    line-height: 1.55;
+    max-width: 30ch;
+  }
+
+  #log-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 8px 0 20px;
+  }
+
+  #log-list::-webkit-scrollbar { width: 6px; }
+  #log-list::-webkit-scrollbar-thumb { background: var(--line); border-radius: 3px; }
+
+  .log-entry {
+    display: grid;
+    grid-template-columns: 52px 1fr;
+    gap: 10px;
+    padding: 11px 22px;
+    border-left: 2px solid transparent;
+    cursor: pointer;
+    background: none;
+    border-top: none; border-right: none; border-bottom: none;
+    width: 100%;
+    text-align: left;
+    color: inherit;
+  }
+
+  .log-entry:hover, .log-entry:focus-visible { background: rgba(201, 120, 79, 0.07); border-left-color: var(--copper-dim); }
+  .log-entry.is-focused { background: rgba(201, 120, 79, 0.1); border-left-color: var(--copper); }
+
+  .log-entry .idx {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--faint);
+    padding-top: 2px;
+    letter-spacing: 0.02em;
+  }
+
+  .log-entry.is-focused .idx { color: var(--copper-soft); }
+
+  .log-entry .text {
+    font-size: 13px;
+    line-height: 1.45;
+    color: var(--muted);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2; /* <--- Standard property added here */
+    -webkit-box-orient: vertical;
+  }
+
+  .log-entry:hover .text, .log-entry.is-focused .text { color: var(--ink); }
+
+  .log-empty {
+    padding: 22px;
+    color: var(--faint);
+    font-size: 13px;
+    line-height: 1.65;
+  }
+
+  #rail-foot {
+    padding: 14px 22px 18px;
+    border-top: 1px solid var(--line);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--faint);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #rail-foot .link-status { display: flex; align-items: center; gap: 6px; }
+  #rail-foot .link-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--faint); }
+  #rail-foot.online .link-dot { background: var(--jade); }
+  #rail-foot.demo .link-dot { background: var(--copper); }
+
+  #rail-header .clear-log {
+    margin-top: 12px;
+    background: none;
+    border: 1px solid var(--line);
+    color: var(--faint);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.03em;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: color 0.12s ease, border-color 0.12s ease;
+  }
+  #rail-header .clear-log:hover { color: var(--alert); border-color: var(--alert-dim); }
+  #rail-header .clear-log:disabled { opacity: 0.35; cursor: default; }
+
+  .log-entry .meta-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .log-entry .time {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    color: var(--faint);
+    flex-shrink: 0;
+  }
+  .log-entry.is-focused .time { color: var(--copper-dim); }
+  #rail-foot.offline .link-dot { background: var(--alert); }
+
+  /* ---------- MAIN ---------- */
+  #main {
+    padding: 48px 56px 70px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  #hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 700px) minmax(280px, 380px);
+    gap: 48px;
+    align-items: start;
+  }
+
+  #main-header { max-width: 640px; position: relative; }
+
+  #orbit-accent {
+    position: absolute;
+    top: -18px;
+    right: -20px;
+    width: 132px;
+    height: 132px;
+    opacity: 0.9;
+  }
+
+  #main-header h1 {
+    font-family: 'Spectral', serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.24;
+    margin: 0 0 12px;
+    letter-spacing: 0.002em;
+    max-width: 620px;
+    padding-right: 48px;
+  }
+
+  #main-header p {
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+    max-width: 54ch;
+  }
+
+  /* command input */
+  #query-form {
+    max-width: 100%;
+    border: 1px solid var(--line);
+    background: linear-gradient(180deg, var(--panel-raised), var(--panel));
+    display: flex;
+    align-items: stretch;
+    margin-top: 28px;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  #query-form:focus-within {
+    border-color: var(--copper-dim);
+    box-shadow: 0 0 0 3px rgba(201, 120, 79, 0.12);
+  }
+
+  #prompt-glyph {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    color: var(--jade);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 15px;
+    border-right: 1px solid var(--line);
+  }
+
+  #query-input {
+    flex: 1;
+    min-width: 0;
+    background: transparent;
+    border: none;
+    color: var(--ink);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14.5px;
+    padding: 16px 14px;
+  }
+
+  #query-input::placeholder { color: var(--faint); }
+  #query-input:focus { outline: none; }
+
+  #query-form button {
+    background: var(--copper);
+    color: #241206;
+    border: none;
+    padding: 0 26px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 13.5px;
+    cursor: pointer;
+    letter-spacing: 0.01em;
+    transition: background 0.12s ease;
+  }
+
+  #query-form button:hover:not(:disabled) { background: var(--copper-soft); }
+  #query-form button:disabled { background: var(--copper-dim); color: var(--faint); cursor: default; }
+
+  #suggestions {
+    max-width: 100%;
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .suggestion {
+    color: var(--muted);
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    cursor: pointer;
+    padding: 6px 14px;
+    font-size: 12.5px;
+    transition: color 0.12s ease, border-color 0.12s ease;
+  }
+
+  .suggestion:hover, .suggestion:focus-visible { color: var(--jade); border-color: var(--jade-dim); }
+
+  #hint-msg {
+    max-width: 100%;
+    margin-top: 10px;
+    min-height: 16px;
+    font-size: 12px;
+    color: var(--alert);
+    font-family: 'IBM Plex Mono', monospace;
+  }
+
+  #source-note {
+    max-width: 100%;
+    margin-top: 14px;
+    padding: 10px 14px;
+    border: 1px dashed var(--copper-dim);
+    background: rgba(201, 120, 79, 0.05);
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.55;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+
+  /* ---------- SIDE PANEL ---------- */
+  #side-panel {
+    position: sticky;
+    top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .side-block {
+    border: 1px solid var(--line);
+    background: var(--panel);
+    padding: 16px 18px;
+  }
+
+  .side-block-title {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.03em;
+    color: var(--faint);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .side-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 6px 0;
+    border-bottom: 1px solid var(--line-soft);
+    font-size: 12.5px;
+  }
+
+  .side-row:last-child { border-bottom: none; }
+  .side-row .k { color: var(--muted); }
+  .side-row .v { font-family: 'IBM Plex Mono', monospace; color: var(--ink); text-align: right; }
+  .side-row .v.ok { color: var(--jade); }
+  .side-row .v.warn { color: var(--copper-soft); }
+
+  #coverage-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+
+  .coverage-chip {
+    font-size: 11px;
+    color: var(--muted);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 4px 10px;
+  }
+
+  .side-tip {
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  .side-tip .k {
+    font-family: 'IBM Plex Mono', monospace;
+    color: var(--jade);
+    margin-right: 4px;
+  }
+
+  .side-tip kbd {
+    font-family: 'IBM Plex Mono', monospace;
+    background: var(--panel-raised);
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    padding: 1px 6px;
+    color: var(--ink);
+  }
+
+  /* ---------- FOCUS PANEL (map + coords of currently focused entry) ---------- */
+  #focus-section {
+    max-width: 100%;
+    margin-top: 40px;
+    border: 1px solid var(--line);
+    background: var(--panel);
+    display: none;
+  }
+
+  #focus-section.active { display: block !important; }
+
+  #focus-info {
+    padding: 18px 20px;
+    border-right: 1px solid var(--line);
+  }
+
+  #focus-info .label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--faint);
+    letter-spacing: 0.03em;
+    margin-bottom: 8px;
+  }
+
+  #focus-info .query-echo {
+    font-family: 'Spectral', serif;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--copper-soft);
+    margin: 0 0 12px;
+    line-height: 1.5;
+  }
+
+  #focus-info .answer {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--ink);
+    margin: 0;
+  }
+
+  #focus-map { 
+    height: 100%; 
+    min-height: 280px; 
+    width: 100%; 
+  }
+
+  /* ---------- FEED ---------- */
+  #feed-section {
+    max-width: 100%;
+    margin-top: 34px;
+  }
+
+  #agent-panel {
+    max-width: 100%;
+    margin-top: 28px;
+    border: 1px solid var(--line);
+    background: linear-gradient(180deg, var(--panel-raised), var(--panel));
+    padding: 22px;
+  }
+
+  #feed-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--faint);
+    letter-spacing: 0.03em;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 20px;
+  }
+
+  #empty-state {
+    color: var(--faint);
+    font-size: 13.5px;
+    border: 1px dashed var(--line);
+    padding: 34px;
+    max-width: 540px;
+    line-height: 1.75;
+  }
+
+  .entry {
+    border: 1px solid var(--line);
+    background: var(--panel);
+    margin-bottom: 18px;
+    animation: entry-in 0.28s ease both;
+  }
+
+  @keyframes entry-in {
+    from { opacity: 0; transform: translateY(-6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .entry-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 18px;
+    border-bottom: 1px solid var(--line);
+    cursor: pointer;
+    background: none;
+    width: 100%;
+    text-align: left;
+    color: inherit;
+    border-left: none; border-right: none; border-top: none;
+  }
+
+  .entry-head .frame-id {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--faint);
+    flex-shrink: 0;
+  }
+
+  .entry-head .query-text {
+    font-size: 14px;
+    color: var(--ink);
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .entry-head .tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10.5px;
+    padding: 3px 8px;
+    border-radius: 3px;
+    flex-shrink: 0;
+  }
+
+  .tag.demo { background: var(--copper-dim); color: var(--copper-soft); }
+  .tag.live { background: var(--jade-dim); color: var(--jade); }
+
+  .entry-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .entry-loading {
+    padding: 26px 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    grid-column: 1 / -1;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12.5px;
+    color: var(--jade);
+  }
+
+  .entry-loading .dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--jade);
+    animation: pulse 1.3s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.25; }
+  }
+
+  .entry-error {
+    padding: 20px 18px;
+    grid-column: 1 / -1;
+    color: var(--alert);
+    font-size: 13px;
+    font-family: 'IBM Plex Mono', monospace;
+    background: rgba(217, 122, 106, 0.06);
+  }
+
+  #image-panel-tpl, .image-col { border-right: 1px solid var(--line); }
+
+  .image-frame {
+    position: relative;
+    overflow: hidden;
+    background: #060a13;
+    aspect-ratio: 4 / 3;
+  }
+
+  .image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    background: var(--panel-raised);
+    opacity: 0;
+    transition: opacity 0.25s ease, transform 0.4s ease;
+  }
+
+  .image-frame img.loaded { opacity: 1; }
+  .image-frame:hover img.loaded { transform: scale(1.035); }
+
+  .image-frame.img-error::after {
+    content: "Frame unavailable — archive image could not be loaded";
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 18px;
+    font-size: 11.5px;
+    line-height: 1.5;
+    color: var(--faint);
+    background: var(--panel-raised);
+  }
+  .image-frame.img-error img { display: none; }
+
+  .readout-row .v.coord { letter-spacing: -0.01em; }
+
+  .scan-line {
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 2px;
+    background: linear-gradient(90deg, transparent, var(--jade), transparent);
+    opacity: 0;
+  }
+
+  .scan-line.sweep { animation: sweep 1.1s ease-out; }
+
+  @keyframes sweep {
+    0% { transform: translateY(0); opacity: 1; }
+    92% { opacity: 1; }
+    100% { transform: translateY(230px); opacity: 0; }
+  }
+
+  .readout { padding: 12px 16px; }
+
+  .readout-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    border-bottom: 1px solid var(--line-soft);
+    font-size: 12px;
+  }
+
+  .readout-row:last-child { border-bottom: none; }
+  .readout-row .k { color: var(--muted); }
+  .readout-row .v { font-family: 'IBM Plex Mono', monospace; color: var(--ink); }
+
+  .reading-col .readout { padding: 16px 18px 14px; }
+
+  .reading-text {
+    font-size: 13.5px;
+    line-height: 1.7;
+    color: var(--ink);
+    margin: 0 0 12px;
+  }
+
+  .locate-btn {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--jade);
+    background: var(--jade-dim);
+    border: none;
+    padding: 6px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .locate-btn:hover { filter: brightness(1.15); }
+
+  @media (max-width: 1150px) {
+    #hero-grid { grid-template-columns: 1fr; }
+    #side-panel { position: static; }
+  }
+
+  @media (max-width: 860px) {
+    #app { grid-template-columns: 1fr; }
+    #rail { display: none; }
+    #main { padding: 30px 20px 56px; }
+    #orbit-accent { display: none; }
+    #focus-section.active { grid-template-columns: 1fr; }
+    #focus-info { border-right: none; border-bottom: 1px solid var(--line); }
+    .entry-body { grid-template-columns: 1fr; }
+    .image-col { border-right: none; border-bottom: 1px solid var(--line); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .scan-line.sweep { animation: none; opacity: 0; }
+    .entry-loading .dot { animation: none; }
+    .entry { animation: none; }
+    #orbit-accent .sat { animation: none; }
+  }
+</style>
+</head>
+<body>
+
+<div id="app">
+  <aside id="rail">
+    <div id="rail-header">
+      <div class="mark"><span class="dot"></span>SatQuery</div>
+      <div class="sub">Query log — queries run against Sentinel‑1/2, Landsat &amp; Cartosat imagery this session</div>
+      <button class="clear-log" id="clear-log-btn" type="button" title="Clear this session's transmission log">Clear log</button>
+    </div>
+    <div id="log-list">
+      <div class="log-empty">No transmissions logged yet. Send a query below.</div>
+    </div>
+    <div id="rail-foot">
+      <span class="link-status"><span class="link-dot"></span><span id="link-status-text">checking link…</span></span>
+      <span id="entry-count">0 logged</span>
+    </div>
+  </aside>
+
+  <main id="main">
+    <div id="hero-grid">
+      <div id="hero-main">
+        <div id="main-header">
+          <svg id="orbit-accent" viewBox="0 0 132 132" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <ellipse cx="66" cy="66" rx="58" ry="24" fill="none" stroke="#263252" stroke-width="1" stroke-dasharray="3 5" transform="rotate(-18 66 66)"/>
+            <circle cx="66" cy="66" r="21" fill="#101a2e" stroke="#234036" stroke-width="1"/>
+            <path d="M 45,66 A 21,21 0 0 1 87,66" fill="none" stroke="#1f2840" stroke-width="1"/>
+            <path d="M 45,66 A 21,7 0 0 0 87,66" fill="none" stroke="#1f2840" stroke-width="1"/>
+            <path d="M 66,45 A 7,21 0 0 0 66,87" fill="none" stroke="#1f2840" stroke-width="1"/>
+            <path d="M 66,45 A 21,21 0 0 1 66,87" fill="none" stroke="#1f2840" stroke-width="1"/>
+            <path d="M 54,49 Q 62,58 56,66 T 60,82" fill="none" stroke="#2a4a3f" stroke-width="2" stroke-linecap="round"/>
+            <path d="M 78,50 Q 70,60 80,70 T 74,84" fill="none" stroke="#2a4a3f" stroke-width="2" stroke-linecap="round"/>
+            <g class="sat">
+              <animateMotion dur="9s" repeatCount="indefinite"
+                path="M 124,66 A 58,24 -18 1,1 8,66 A 58,24 -18 1,1 124,66 Z" />
+              <circle r="2.6" fill="#e3a67c"/>
+            </g>
+          </svg>
+          <h1>Query Earth observation satellite imagery<br>using simple, natural language commands.</h1>
+          <p>Analyze and understand global environmental changes through advanced AI-powered satellite data analysis. Describe a region, a change, or a feature, and the console retrieves the closest matching Earth-observation frame (Sentinel‑1/2, Landsat, Cartosat) and returns a grounded, confidence-scored analysis.</p>
+        </div>
+
+        <form id="query-form">
+          <div id="prompt-glyph">&gt;</div>
+          <input id="query-input" type="text" placeholder="e.g. What changed between these 2023 and 2024 images?" autocomplete="off" aria-label="Query the Earth observation archive" />
+          <button type="submit" id="submit-btn">Query</button>
+        </form>
+
+        <div id="suggestions" role="group" aria-label="Suggested queries">
+          <span class="suggestion" data-q="Detect mining site expansion over time">Detect mining site expansion</span>
+          <span class="suggestion" data-q="Flag unauthorized mining encroachment in this lease area">Flag mining encroachment</span>
+          <span class="suggestion" data-q="Highlight coastal erosion along this shoreline">Highlight coastal erosion</span>
+          <span class="suggestion" data-q="Track mangrove and marine ecosystem health">Track mangrove &amp; marine health</span>
+          <span class="suggestion" data-q="Detect deforestation in this forest region">Detect deforestation</span>
+        </div>
+        <div id="hint-msg" role="status" aria-live="polite"></div>
+
+        <div id="source-note">
+          Live queries hit ISRO Bhoonidhi directly. When that link is unavailable, results fall back to a small sample archive — full Bhoonidhi Sentinel/Landsat/Cartosat integration is the next milestone.
+        </div>
+      </div>
+
+      <aside id="side-panel" aria-label="Console status and coverage">
+        <div class="side-block">
+          <div class="side-block-title">Console status</div>
+          <div class="side-row"><span class="k">Primary source</span><span class="v" id="stat-primary">checking…</span></div>
+          <div class="side-row"><span class="k">Local fallback</span><span class="v" id="stat-fallback">checking…</span></div>
+          <div class="side-row"><span class="k">Semantic index</span><span class="v" id="stat-semantic">checking…</span></div>
+          <div class="side-row"><span class="k">Vision agent</span><span class="v" id="stat-agent">checking…</span></div>
+        </div>
+
+        <div class="side-block">
+          <div class="side-block-title">Dataset coverage</div>
+          <div id="coverage-chips">
+            <span class="coverage-chip">Agriculture</span>
+            <span class="coverage-chip">Disaster response</span>
+            <span class="coverage-chip">Urban growth</span>
+            <span class="coverage-chip">Water bodies</span>
+            <span class="coverage-chip">Infrastructure</span>
+            <span class="coverage-chip">Environment</span>
+            <span class="coverage-chip">Mining</span>
+            <span class="coverage-chip">Ocean</span>
+            <span class="coverage-chip">Forest</span>
+          </div>
+        </div>
+
+        <div class="side-block side-tip">
+          <span class="k">Tip</span> Press <kbd>/</kbd> anywhere to jump to the query box.
+        </div>
+      </aside>
+    </div>
+
+    <!-- Agentic AI Hackathon Panel -->
+    <div id="agent-panel">
+      <h3 style="font-family: 'Spectral', serif; font-weight: 500; font-size: 20px; margin: 0 0 8px; color: var(--copper-soft);">SatQuery AI Agent Analysis</h3>
+      <p style="color: var(--muted); font-size: 13.5px; margin: 0 0 16px; line-height: 1.5;">
+        Upload a single image for VQA/Captioning, or an optical-SAR / bi-temporal pair for change detection and cross-modal analysis.
+      </p>
+      
+      <div style="display: flex; gap: 10px; margin-bottom: 14px;">
+        <input type="text" id="agent-query-input" placeholder="e.g., What changed between these dates?" style="flex: 1; background: var(--void); border: 1px solid var(--line); color: var(--ink); font-family: 'IBM Plex Mono', monospace; font-size: 13.5px; padding: 12px 14px;" autocomplete="off" />
+      </div>
+
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
+        <label style="font-size: 12.5px; color: var(--muted); display: flex; align-items: center; gap: 8px; cursor: pointer;">
+          <span style="font-family: 'IBM Plex Mono', monospace; color: var(--jade);">Images (1 or 2):</span>
+          <input type="file" id="agent-image-upload" multiple accept="image/png, image/jpeg, image/tiff" style="color: var(--muted); font-size: 12px;" />
+        </label>
+        <button type="button" id="agent-submit-btn" onclick="runAgenticAnalysis()" style="background: var(--jade); color: #0d1a15; border: none; padding: 10px 20px; font-family: 'Inter', sans-serif; font-weight: 600; font-size: 13px; cursor: pointer; transition: filter 0.12s ease;">Run Agent</button>
+      </div>
+
+      <div id="agent-output" style="border: 1px solid var(--line-soft); background: var(--void); padding: 14px 16px; font-size: 13px; line-height: 1.6; display: none;"></div>
+    </div>
+
+    <section id="focus-section" aria-label="Focused transmission detail" style="display: none;">
+      <div style="padding: 18px 20px; border-bottom: 1px solid var(--line);">
+        <div class="label">Current fix</div>
+        <p class="query-echo" id="focus-query">—</p>
+        <p class="answer" id="focus-answer"></p>
+      </div>
+      <div style="position: relative; width: 100%; height: 280px; background: #060a13;">
+        <div id="focus-map" style="width: 100%; height: 100%; position: absolute; inset: 0;"></div>
+      </div>
+    </section>
+
+    <section id="feed-section">
+      <div id="feed-label">Transmissions</div>
+      <div id="empty-state">
+        No image selected yet. Enter a query above, or choose one of the suggestions, to pull the closest matching frame from the archive.
+      </div>
+      <div id="feed-list" aria-live="polite"></div>
+    </section>
+  </main>
+</div>
+
+<script>
+const API_BASE = "";
+let map, marker, crosshairIcon, mapReady = false;
+let entries = [];
+let focusedId = null;
+let seq = 0;
+
+/* ---------------- demo fallback data ---------------- */
+const DEMO_IMG = "/dataset-images/vembanad-lake-water.jpg";
+const DEMO_BANK = [
+  {
+    keys: ["change", "between", "2023", "2024", "compare"],
+    answer: "Bi-temporal comparison flags new built-up area and a reduction in surrounding vegetation cover between the two acquisitions — consistent with ongoing urban expansion at the edge of the settlement.",
+    instrument: "Sentinel-2 MSI", date: "2024-02-11", lat: 12.9716, lon: 77.5946, score: "0.91"
+  },
+  {
+    keys: ["water", "lake", "flood", "river"],
+    answer: "Surface water is clearly delineated against the surrounding land — the extent closely matches the known lake boundary, with a slight expansion along the northern shore likely tied to recent rainfall.",
+    instrument: "Sentinel-2 MSI", date: "2024-01-18", lat: 9.6, lon: 76.4, score: "0.88"
+  },
+  {
+    keys: ["urban", "expansion", "city", "built"],
+    answer: "New built-up footprint is visible along the city's outer ring, replacing what was cropland in earlier acquisitions — a typical signature of peri-urban expansion.",
+    instrument: "Cartosat-3", date: "2024-03-02", lat: 28.6139, lon: 77.209, score: "0.85"
+  },
+  {
+    keys: ["agriculture", "agricultural", "crop", "farmland", "land-use"],
+    answer: "Field-level changes in crop vigour are visible across the block, with several parcels showing a shift from double-cropped to fallow — worth flagging for a land-use follow-up.",
+    instrument: "Landsat 9 OLI", date: "2024-01-25", lat: 30.901, lon: 75.8572, score: "0.87"
+  },
+  {
+    keys: ["sar", "optical", "fusion", "cross-modal"],
+    answer: "The optical scene shows cloud cover over part of the area of interest; the co-registered SAR pass sees through it cleanly, confirming the same surface-water extent beneath the cloud.",
+    instrument: "Sentinel-1 SAR / Sentinel-2 MSI", date: "2024-02-19", lat: 19.8, lon: 85.8, score: "0.93"
+  }
+];
+
+function pickDemo(query) {
+  const q = query.toLowerCase();
+  let best = DEMO_BANK[0], bestScore = -1;
+  DEMO_BANK.forEach(d => {
+    const s = d.keys.reduce((acc, k) => acc + (q.includes(k) ? 1 : 0), 0);
+    if (s > bestScore) { bestScore = s; best = d; }
+  });
+  return {
+    answer: best.answer,
+    matches: [{ image_url: null, instrument: best.instrument, date: best.date, lat: best.lat, lon: best.lon, score: best.score }]
+  };
+}
+
+/* ---------------- map ---------------- */
+let mapInitAttempts = 0;
+
+function showMapUnavailable() {
+  document.getElementById('focus-map').innerHTML =
+    '<div style="padding:14px;color:var(--faint);font-size:12.5px;">Map unavailable — Leaflet did not load. Coordinates are shown alongside each transmission.</div>';
+}
+
+function initMap() {
+  const mapContainer = document.getElementById('focus-map');
+  if (mapContainer) {
+    mapContainer.style.height = '280px';
+    mapContainer.style.width = '100%';
+  }
+
+  if (typeof L === "undefined") {
+    mapInitAttempts += 1;
+    if (mapInitAttempts <= 6) {
+      setTimeout(() => { if (!mapReady && pendingMapFix) setMapPosition(pendingMapFix.lat, pendingMapFix.lon); }, 300);
+    } else {
+      showMapUnavailable();
+    }
+    return false;
+  }
+  crosshairIcon = L.divIcon({
+    className: '',
+    html: `<svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="14" cy="14" r="8" fill="none" stroke="#c9784f" stroke-width="1.5"/>
+      <line x1="14" y1="0" x2="14" y2="8" stroke="#c9784f" stroke-width="1.5"/>
+      <line x1="14" y1="20" x2="14" y2="28" stroke="#c9784f" stroke-width="1.5"/>
+      <line x1="0" y1="14" x2="8" y2="14" stroke="#c9784f" stroke-width="1.5"/>
+      <line x1="20" y1="14" x2="28" y2="14" stroke="#c9784f" stroke-width="1.5"/>
+      <circle cx="14" cy="14" r="1.5" fill="#c9784f"/>
+    </svg>`,
+    iconSize: [28, 28], iconAnchor: [14, 14],
+  });
+  map = L.map('focus-map', { zoomControl: false, dragging: false, scrollWheelZoom: false, attributionControl: true })
+    .setView([0, 0], 2);
+    
+  const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
+  tiles.on('tileerror', () => console.warn('Map tile failed to load — basemap may render incompletely.'));
+  mapReady = true;
+  window.addEventListener('resize', () => map && map.invalidateSize());
+  return true;
+}
+
+let pendingMapFix = null;
+
+function setMapPosition(lat, lon) {
+  pendingMapFix = { lat, lon };
+  
+  // 1. Reveal the section container first
+  const section = document.getElementById('focus-section');
+  section.classList.add('active');
+
+  // 2. Wait 50ms for the browser to calculate grid layout widths, then initialize/update map
+  setTimeout(() => {
+    if (!mapReady) { 
+      initMap(); 
+    }
+    if (!mapReady) return;
+
+    if (marker) map.removeLayer(marker);
+    marker = L.marker([lat, lon], { icon: crosshairIcon }).addTo(map);
+    
+    if (map.getZoom() < 4) {
+      map.setView([lat, lon], 5);
+    } else {
+      map.flyTo([lat, lon], 5, { duration: 0.6 });
+    }
+    
+    // Force Leaflet to re-read container dimensions and fetch tiles
+    map.invalidateSize();
+  }, 50);
+}
+
+/* ---------------- formatting helpers ---------------- */
+function formatScore(score) {
+  const n = parseFloat(score);
+  if (Number.isNaN(n)) return score;
+  return Math.round(n * 100) + '%';
+}
+
+function formatCoord(lat, lon) {
+  const ns = lat >= 0 ? 'N' : 'S';
+  const ew = lon >= 0 ? 'E' : 'W';
+  return `${Math.abs(lat).toFixed(1)}°${ns}, ${Math.abs(lon).toFixed(1)}°${ew}`;
+}
+
+function relativeTime(ts) {
+  if (!ts) return '';
+  const diff = Math.max(0, Date.now() - ts);
+  const s = Math.floor(diff / 1000);
+  if (s < 5) return 'just now';
+  if (s < 60) return s + 's ago';
+  const m = Math.floor(s / 60);
+  if (m < 60) return m + 'm ago';
+  const h = Math.floor(m / 60);
+  return h + 'h ago';
+}
+
+/* ---------------- markdown rendering (for LLM agent output) ---------------- */
+function escapeHtml(str) {
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+}
+
+// Converts the Gemini agent's markdown-ish text into clean, safe HTML instead
+// of dumping raw asterisks/#/LaTeX-style symbols into the page.
+function markdownToHtml(raw) {
+  if (!raw) return '';
+
+  // Strip stray LaTeX-style math wrappers (\text{...}, $...$) that vision
+  // models sometimes emit, keeping just the inner text.
+  let text = raw
+    .replace(/\$\\text\{([^}]*)\}\$/g, '$1')
+    .replace(/\\text\{([^}]*)\}/g, '$1')
+    .replace(/\$([^$]*)\$/g, '$1');
+
+  text = escapeHtml(text);
+
+  const lines = text.split(/\r?\n/);
+  const htmlParts = [];
+  let listBuffer = [];
+  let listType = null; // 'ul' | 'ol'
+
+  function flushList() {
+    if (listBuffer.length) {
+      htmlParts.push(`<${listType}>${listBuffer.join('')}</${listType}>`);
+      listBuffer = [];
+      listType = null;
+    }
+  }
+
+  function inline(str) {
+    return str
+      .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+      .replace(/(?:^|\s)\*(?!\*)([^*]+?)\*(?=\s|$)/g, ' <em>$1</em>')
+      .replace(/`([^`]+?)`/g, '<code>$1</code>');
+  }
+
+  for (let line of lines) {
+    const trimmed = line.trim();
+
+    if (!trimmed) {
+      flushList();
+      continue;
+    }
+
+    const headerMatch = trimmed.match(/^(#{1,4})\s+(.*)$/);
+    const bulletMatch = trimmed.match(/^[-*]\s+(.*)$/);
+    const numberedMatch = trimmed.match(/^\d+[.)]\s+(.*)$/);
+    const hrMatch = /^-{3,}$/.test(trimmed);
+
+    if (hrMatch) {
+      flushList();
+      htmlParts.push('<hr>');
+    } else if (headerMatch) {
+      flushList();
+      const level = Math.min(headerMatch[1].length + 3, 6); // map to h4-h6
+      htmlParts.push(`<h${level} style="margin:10px 0 6px;">${inline(headerMatch[2])}</h${level}>`);
+    } else if (bulletMatch) {
+      if (listType !== 'ul') { flushList(); listType = 'ul'; }
+      listBuffer.push(`<li>${inline(bulletMatch[1])}</li>`);
+    } else if (numberedMatch) {
+      if (listType !== 'ol') { flushList(); listType = 'ol'; }
+      listBuffer.push(`<li>${inline(numberedMatch[1])}</li>`);
+    } else {
+      flushList();
+      htmlParts.push(`<p style="margin:0 0 8px;">${inline(trimmed)}</p>`);
+    }
+  }
+  flushList();
+
+  return htmlParts.join('\n');
+}
+
+/* ---------------- rendering ---------------- */
+function frameId(n) { return "TX-" + String(n).padStart(3, '0'); }
+
+function renderRail() {
+  const list = document.getElementById('log-list');
+  document.getElementById('entry-count').textContent = entries.length + (entries.length === 1 ? " logged" : " logged");
+  if (!entries.length) {
+    list.innerHTML = '<div class="log-empty">No transmissions logged yet. Send a query below.</div>';
+    return;
+  }
+  list.innerHTML = "";
+  entries.forEach(e => {
+    const btn = document.createElement('button');
+    btn.className = 'log-entry' + (e.id === focusedId ? ' is-focused' : '');
+    btn.setAttribute('aria-current', e.id === focusedId ? 'true' : 'false');
+    btn.innerHTML = `<span class="idx">${frameId(e.id)}</span><div><div class="meta-row"><span class="time">${relativeTime(e.time)}</span></div><span class="text"></span></div>`;
+    btn.querySelector('.text').textContent = e.query;
+    btn.addEventListener('click', () => focusEntry(e.id));
+    list.appendChild(btn);
+  });
+}
+
+document.getElementById('clear-log-btn').addEventListener('click', clearLog);
+function clearLog() {
+  if (!entries.length) return;
+  if (!confirm('Clear this session\u2019s transmission log? This cannot be undone.')) return;
+  entries = [];
+  focusedId = null;
+  renderAll();
+}
+
+setInterval(() => { if (entries.length) renderRail(); }, 30000);
+
+function renderFocus() {
+  const entry = entries.find(e => e.id === focusedId);
+  const section = document.getElementById('focus-section');
+  if (!entry || entry.status !== 'done') { section.classList.remove('active'); return; }
+  section.classList.add('active');
+  document.getElementById('focus-query').textContent = '“' + entry.query + '”';
+  document.getElementById('focus-answer').textContent = entry.answer;
+  const top = entry.matches[0];
+  setMapPosition(top.lat, top.lon);
+  
+  // Force map size recalculation when focus panel becomes active
+  if (map) {
+    setTimeout(() => map.invalidateSize(), 150);
+  }
+}
+
+function focusEntry(id) {
+  focusedId = id;
+  renderRail();
+  renderFocus();
+  const target = document.getElementById('focus-section');
+  if (target && target.classList.contains('active')) {
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (map) {
+      setTimeout(() => map.invalidateSize(), 150);
+    }
+  }
+}
+
+function entryHTML(e) {
+  const tag = e.status === 'done'
+    ? (e.demo ? '<span class="tag demo">simulated</span>' : '<span class="tag live">live</span>')
+    : '';
+  let body;
+  if (e.status === 'loading') {
+    body = `<div class="entry-loading"><span class="dot"></span><span class="loading-label">Receiving frame…</span></div>`;
+  } else if (e.status === 'error') {
+    body = `<div class="entry-error">${e.error}</div>`;
+  } else {
+    const top = e.matches[0];
+    const imgSrc = top.image_url ? `${API_BASE}${top.image_url}` : DEMO_IMG;
+    body = `
+      <div class="image-col">
+        <div class="image-frame">
+          <img src="${imgSrc}" alt="Matched Earth observation frame near ${formatCoord(top.lat, top.lon)}" loading="lazy"
+               onload="this.classList.add('loaded')"
+               onerror="this.parentElement.classList.add('img-error')" />
+          <div class="scan-line sweep"></div>
+        </div>
+        <div class="readout">
+          <div class="readout-row"><span class="k">Instrument</span><span class="v">${top.instrument}</span></div>
+          <div class="readout-row"><span class="k">Captured</span><span class="v">${top.date}</span></div>
+          <div class="readout-row"><span class="k">Coordinates</span><span class="v coord">${formatCoord(top.lat, top.lon)}</span></div>
+          <div class="readout-row"><span class="k">Match confidence</span><span class="v">${formatScore(top.score)}</span></div>
+        </div>
+      </div>
+      <div class="reading-col">
+        <div class="readout">
+          <p class="reading-text">${e.answer}</p>
+          <button class="locate-btn" type="button" data-locate="${e.id}">Locate on map</button>
+        </div>
+      </div>`;
+  }
+  return `
+    <button class="entry-head" data-focus="${e.id}">
+      <span class="frame-id">${frameId(e.id)}</span>
+      <span class="query-text"></span>
+      ${tag}
+    </button>
+    <div class="entry-body">${body}</div>
+  `;
+}
+
+function renderFeed() {
+  const list = document.getElementById('feed-list');
+  const empty = document.getElementById('empty-state');
+  empty.style.display = entries.length ? 'none' : 'block';
+  list.innerHTML = "";
+  entries.forEach(e => {
+    const div = document.createElement('div');
+    div.className = 'entry';
+    div.innerHTML = entryHTML(e);
+    div.querySelector('.query-text').textContent = e.query;
+    div.querySelector('[data-focus]').addEventListener('click', () => focusEntry(e.id));
+    const locateBtn = div.querySelector('[data-locate]');
+    if (locateBtn) locateBtn.addEventListener('click', (ev) => { ev.stopPropagation(); focusEntry(e.id); });
+    list.appendChild(div);
+  });
+}
+
+function renderAll() { renderRail(); renderFeed(); renderFocus(); }
+
+function setLinkStatus(state) {
+  const foot = document.getElementById('rail-foot');
+  const text = document.getElementById('link-status-text');
+  foot.className = state;
+  if (state === 'online') text.textContent = 'archive linked';
+  else if (state === 'demo') text.textContent = 'demo mode';
+  else if (state === 'offline') text.textContent = 'link unavailable';
+  else text.textContent = 'checking link…';
+}
+
+/* ---------------- query flow ---------------- */
+async function runQuery(queryText) {
+  const btn = document.getElementById('submit-btn');
+  const hint = document.getElementById('hint-msg');
+  hint.textContent = '';
+  btn.disabled = true;
+
+  const originalBtnLabel = btn.textContent;
+  btn.textContent = 'Querying…';
+
+  seq += 1;
+  const id = seq;
+  const entry = { id, query: queryText, status: 'loading', time: Date.now() };
+  entries.unshift(entry);
+  focusedId = id;
+  renderAll();
+
+  try {
+    const res = await fetch(`${API_BASE}/query`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ query: queryText, top_k: 3 }),
+    });
+    if (!res.ok) throw new Error(`Backend responded with ${res.status}`);
+    const data = await res.json();
+
+    if (!data.matches || data.matches.length === 0) {
+      entry.status = 'error';
+      entry.error = 'No matching frame found in the archive for that query. Try one of the suggestions above, or rephrase.';
+      setLinkStatus('online');
+    } else {
+      entry.status = 'done';
+      entry.answer = data.answer;
+      entry.matches = data.matches;
+      entry.demo = false;
+      setLinkStatus('online');
+    }
+  } catch (err) {
+    const demo = pickDemo(queryText);
+    entry.status = 'done';
+    entry.answer = demo.answer;
+    entry.matches = demo.matches;
+    entry.demo = true;
+    setLinkStatus('demo');
+    console.warn('Backend unreachable, serving simulated data:', err.message);
+  } finally {
+    btn.disabled = false;
+    btn.textContent = originalBtnLabel;
+    renderAll();
+    if (map) {
+      setTimeout(() => map.invalidateSize(), 150);
+    }
+  }
+}
+
+document.getElementById('query-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const input = document.getElementById('query-input');
+  const val = input.value.trim();
+  const hint = document.getElementById('hint-msg');
+  if (!val) { hint.textContent = 'Enter a description of what you\u2019re looking for first.'; return; }
+  runQuery(val);
+  input.value = '';
+});
+
+document.querySelectorAll('.suggestion').forEach(s => {
+  s.addEventListener('click', () => runQuery(s.dataset.q));
+});
+
+/* ---------- Agentic AI Integration Function ---------- */
+async function runAgenticAnalysis() {
+  const queryInput = document.getElementById('agent-query-input');
+  const fileInput = document.getElementById('agent-image-upload');
+  const outputDiv = document.getElementById('agent-output');
+  const btn = document.getElementById('agent-submit-btn');
+
+  const queryText = queryInput.value.trim();
+  if (!queryText) {
+    alert("Please enter a natural-language query for the agent.");
+    return;
+  }
+
+  btn.disabled = true;
+  const oldLabel = btn.textContent;
+  btn.textContent = 'Orchestrating…';
+
+  outputDiv.style.display = 'block';
+  outputDiv.innerHTML = '<span style="color: var(--jade);">Agent executing model registry lookup and input validation…</span>';
+
+  const formData = new FormData();
+  formData.append('query', queryText);
+  if (fileInput.files.length > 0) formData.append('image1', fileInput.files[0]);
+  if (fileInput.files.length > 1) formData.append('image2', fileInput.files[1]);
+
+  try {
+    const res = await fetch(`${API_BASE}/agent-query`, {
+      method: 'POST',
+      body: formData
+    });
+    if (!res.ok) throw new Error(`Agent backend responded with ${res.status}`);
+    const data = await res.json();
+    const sum = data.execution_summary;
+
+    outputDiv.innerHTML = `
+      <div style="margin-bottom: 8px; color: var(--ink); font-weight: 500;">${markdownToHtml(data.answer)}</div>
+      <div style="border-top: 1px solid var(--line-soft); padding-top: 8px; margin-top: 8px; font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: var(--muted);">
+        <div style="color: var(--jade); margin-bottom: 4px; font-weight: 600;">[Auditable Execution Trace]</div>
+        <div>Task: <span style="color: var(--ink);">${sum.interpreted_task}</span></div>
+        <div>Selected Tool / Model: <span style="color: var(--copper-soft);">${sum.selected_tool}</span></div>
+        <div>Images Processed: <span style="color: var(--ink);">${sum.images_detected}</span></div>
+      </div>
+    `;
+  } catch (err) {
+    outputDiv.innerHTML = `<span style="color: var(--alert);">Agent execution error: ${err.message}</span>`;
+  } finally {
+    btn.disabled = false;
+    btn.textContent = oldLabel;
+  }
+}
+
+fetch(`${API_BASE}/history`).then(r => setLinkStatus(r.ok ? 'online' : 'offline')).catch(() => setLinkStatus('offline'));
+
+/* ---------- side panel: console status from /health ---------- */
+function setStat(id, text, cls) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.textContent = text;
+  el.className = 'v' + (cls ? ' ' + cls : '');
+}
+
+fetch(`${API_BASE}/health`)
+  .then(r => r.ok ? r.json() : Promise.reject())
+  .then(h => {
+    setStat('stat-primary', h.bhoonidhi_configured ? 'Bhoonidhi (live)' : 'Bhoonidhi (unconfigured)', h.bhoonidhi_configured ? 'ok' : 'warn');
+    setStat('stat-fallback', `${h.local_dataset_entries} sample frames`, 'ok');
+    setStat('stat-semantic', h.semantic_index_loaded ? 'online' : 'keyword only', h.semantic_index_loaded ? 'ok' : 'warn');
+    setStat('stat-agent', h.gemini_configured ? 'configured' : 'not configured', h.gemini_configured ? 'ok' : 'warn');
+  })
+  .catch(() => {
+    setStat('stat-primary', 'unavailable', 'warn');
+    setStat('stat-fallback', 'unavailable', 'warn');
+    setStat('stat-semantic', 'unavailable', 'warn');
+    setStat('stat-agent', 'unavailable', 'warn');
+  });
+
+document.addEventListener('keydown', (e) => {
+  if (e.key !== '/') return;
+  const active = document.activeElement;
+  const typing = active && (active.tagName === 'INPUT' || active.tagName === 'TEXTAREA');
+  if (typing) return;
+  e.preventDefault();
+  document.getElementById('query-input').focus();
+});
+
+document.getElementById('query-input').focus();
+renderAll();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,814 @@
+{
+  "images": [
+    {
+      "id": "agri-1",
+      "filename": "thanjavur-agriculture.jpg",
+      "caption": "This satellite image captures the extensive green paddy crop fields and farming landscape of the Thanjavur delta region in Tamil Nadu, showcasing productive agricultural land with dense rice cultivation. Known as the 'Rice Bowl of Tamil Nadu,' the Thanjavur delta is fed by the Cauvery river system and supports multiple paddy cropping cycles each year. Time-series imagery like this is used by agricultural agencies to track sowing progress, estimate crop acreage, and flag early signs of stress before yields are affected. Because farming conditions vary sharply from one Indian state to another, satellite coverage of fields such as these helps build a more complete national agricultural picture. This frame was captured by ResourceSat-2 on 10 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 10.79°N, 79.14°E, this scene is part of SatQuery's expanding agricultural monitoring coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-10",
+      "latitude": 10.787,
+      "longitude": 79.1378
+    },
+    {
+      "id": "agri-2",
+      "filename": "punjab-agriculture.jpg",
+      "caption": "The image displays vast agricultural farmlands across Punjab with visible crop harvest patterns, demonstrating the region's significant contribution to India's grain production and farming infrastructure. Punjab is one of India's principal grain-producing states, and fields like these are central to the country's wheat and rice procurement during the harvest season. Remote sensing of this kind feeds into vegetation-index models that help planners forecast harvest volumes and allocate irrigation resources more efficiently. Tracking farmland health from orbit gives policymakers an early warning system for regional shortfalls long before ground surveys would otherwise catch them. This frame was captured by ResourceSat-2 on 12 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 30.90°N, 75.86°E, this scene is part of SatQuery's expanding agricultural monitoring coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-12",
+      "latitude": 30.901,
+      "longitude": 75.8572
+    },
+    {
+      "id": "agri-3",
+      "filename": "marathwada-agriculture.jpg",
+      "caption": "Satellite imagery of dry farmland and distinct crop field patterns in the Marathwada region, illustrating agriculture in a semi-arid climate with seasonal water availability challenges. Marathwada lies in Maharashtra's rain-shadow zone, where farmers regularly contend with erratic monsoon rainfall and recurring dry spells. Analysts use successive captures of fields such as these to detect shifts in cropping patterns, fallow land, and the pace of the sowing season. Reliable crop monitoring at this scale is central to food-security planning in a country where agriculture supports the livelihoods of hundreds of millions of people. This frame was captured by ResourceSat-2 on 15 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 19.88°N, 75.34°E, this scene is part of SatQuery's expanding agricultural monitoring coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-15",
+      "latitude": 19.8762,
+      "longitude": 75.3433
+    },
+    {
+      "id": "agri-4",
+      "filename": "karnataka-agriculture.jpg",
+      "caption": "This image shows productive farmlands and lush green crop fields across Karnataka, representing the state's diverse agricultural zones supporting various crops and farming communities. Karnataka's farmland spans everything from irrigated plains to dryland tracts, supporting crops as varied as ragi, sugarcane, and horticultural produce. This type of frame supports state agriculture departments in monitoring field-level productivity and identifying areas that may need drought or pest intervention. Consistent observation of farmland like this underpins national efforts to balance water use, soil health, and crop output across widely differing regional climates. This frame was captured by ResourceSat-2 on 18 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 12.97°N, 77.59°E, this scene is part of SatQuery's expanding agricultural monitoring coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-18",
+      "latitude": 12.9716,
+      "longitude": 77.5946
+    },
+    {
+      "id": "agri-5",
+      "filename": "nashik-agriculture.jpg",
+      "caption": "Satellite view of extensive vineyards and farming fields in the Nashik region of Maharashtra, showcasing the area's famous wine production landscape and diverse agricultural practices. Nashik is often called the 'Wine Capital of India,' and its vineyards, alongside onion and grape cultivation, make it an economically significant agricultural belt. Time-series imagery like this is used by agricultural agencies to track sowing progress, estimate crop acreage, and flag early signs of stress before yields are affected. Because farming conditions vary sharply from one Indian state to another, satellite coverage of fields such as these helps build a more complete national agricultural picture. This frame was captured by ResourceSat-2 on 20 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 20.00°N, 73.79°E, this scene is part of SatQuery's expanding agricultural monitoring coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-20",
+      "latitude": 19.9975,
+      "longitude": 73.7898
+    },
+    {
+      "id": "agri-6",
+      "filename": "tamilnadu-agriculture.jpg",
+      "caption": "This image reveals agricultural land and active crop cultivation patterns across Tamil Nadu, displaying the region's intensive farming systems and organized field layouts. Tamil Nadu's farmland relies heavily on a mix of canal irrigation and groundwater, supporting a dense patchwork of small and medium-sized holdings. Remote sensing of this kind feeds into vegetation-index models that help planners forecast harvest volumes and allocate irrigation resources more efficiently. Tracking farmland health from orbit gives policymakers an early warning system for regional shortfalls long before ground surveys would otherwise catch them. This frame was captured by ResourceSat-2 on 22 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 11.13°N, 78.66°E, this scene is part of SatQuery's expanding agricultural monitoring coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-22",
+      "latitude": 11.1271,
+      "longitude": 78.6569
+    },
+    {
+      "id": "agri-7",
+      "filename": "hariyana-agriculture.jpg",
+      "caption": "The satellite image captures distinct crop rows and organized farming fields in Haryana, illustrating the state's systematic agricultural practices and high-productivity farmland. Haryana, together with neighbouring Punjab, forms the backbone of India's Green Revolution-era grain belt, with highly mechanized and irrigation-intensive farming. Analysts use successive captures of fields such as these to detect shifts in cropping patterns, fallow land, and the pace of the sowing season. Reliable crop monitoring at this scale is central to food-security planning in a country where agriculture supports the livelihoods of hundreds of millions of people. This frame was captured by ResourceSat-2 on 25 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 29.06°N, 76.09°E, this scene is part of SatQuery's expanding agricultural monitoring coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-25",
+      "latitude": 29.0588,
+      "longitude": 76.0856
+    },
+    {
+      "id": "agri-8",
+      "filename": "mp-agriculture.jpg",
+      "caption": "Wide expanses of agricultural land and diverse crops are visible across Madhya Pradesh in this imagery, representing the state's substantial farming operations and crop diversity. Madhya Pradesh has emerged as one of India's largest wheat and pulse producers, with its farmland spanning a wide range of soil types across the state. This type of frame supports state agriculture departments in monitoring field-level productivity and identifying areas that may need drought or pest intervention. Consistent observation of farmland like this underpins national efforts to balance water use, soil health, and crop output across widely differing regional climates. This frame was captured by ResourceSat-2 on 28 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 23.26°N, 77.41°E, this scene is part of SatQuery's expanding agricultural monitoring coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-28",
+      "latitude": 23.2599,
+      "longitude": 77.4126
+    },
+    {
+      "id": "agri-9",
+      "filename": "himachal-agriculture.jpg",
+      "caption": "This image shows terraced farming fields on hillsides in Himachal Pradesh, illustrating the region's distinctive mountain agriculture adapted to steep terrain and high-altitude farming conditions. Terracing on steep hillsides like these allows Himachal's farmers to cultivate apples, vegetables, and cereals despite the region's rugged, high-altitude terrain. Time-series imagery like this is used by agricultural agencies to track sowing progress, estimate crop acreage, and flag early signs of stress before yields are affected. Because farming conditions vary sharply from one Indian state to another, satellite coverage of fields such as these helps build a more complete national agricultural picture. This frame was captured by ResourceSat-2 on 1 February 2026, forming part of an ongoing time series of observations over the area. Located at approximately 31.10°N, 77.17°E, this scene is part of SatQuery's expanding agricultural monitoring coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-02-01",
+      "latitude": 31.1048,
+      "longitude": 77.1734
+    },
+    {
+      "id": "agri-10",
+      "filename": "rajasthan-agriculture.jpg",
+      "caption": "The satellite view displays farming and crop plots across the dry regions of Rajasthan, demonstrating agricultural resilience and water management strategies in arid climates. Farming in Rajasthan's arid zones depends heavily on groundwater and traditional water-harvesting techniques to sustain crops through long dry periods. Remote sensing of this kind feeds into vegetation-index models that help planners forecast harvest volumes and allocate irrigation resources more efficiently. Tracking farmland health from orbit gives policymakers an early warning system for regional shortfalls long before ground surveys would otherwise catch them. This frame was captured by ResourceSat-2 on 3 February 2026, forming part of an ongoing time series of observations over the area. Located at approximately 27.02°N, 74.22°E, this scene is part of SatQuery's expanding agricultural monitoring coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-02-03",
+      "latitude": 27.0238,
+      "longitude": 74.2179
+    },
+    {
+      "id": "disaster-1",
+      "filename": "chennai-flood-disaster.jpg",
+      "caption": "Satellite imagery showing extensively flooded streets and widespread water logging across Chennai city, documenting the urban impact of severe monsoon flooding and drainage system challenges. Chennai's low-lying terrain and rapid urban expansion have repeatedly worsened monsoon flooding by reducing natural drainage and absorption capacity. Frames like this help disaster-response agencies map the extent of damage quickly, guiding where relief teams and resources are deployed first. Documenting the aftermath of natural disasters like this supports both immediate relief efforts and longer-term planning for more resilient infrastructure. This frame was captured by Cartosat-3 on 5 December 2025, forming part of an ongoing time series of observations over the area. Located at approximately 13.08°N, 80.27°E, this scene is part of SatQuery's expanding disaster response coverage across India.",
+      "instrument": "Cartosat-3",
+      "date": "2025-12-05",
+      "latitude": 13.0827,
+      "longitude": 80.2707
+    },
+    {
+      "id": "disaster-2",
+      "filename": "odisha-cyclone-disaster.jpg",
+      "caption": "This image captures the cyclone storm impact and devastating coastal damage along the Odisha coastline, revealing the severe effects of cyclonic wind patterns and storm surge. Odisha's coastline sits directly in the path of Bay of Bengal cyclones, making this kind of storm-track and damage imagery vital for the state's well-developed early-warning systems. Comparing before-and-after imagery of an event like this allows authorities to estimate affected population, damaged infrastructure, and recovery timelines. Understanding the geographic footprint of a disaster is a first step toward directing aid effectively and reducing the human and economic toll of future events. This frame was captured by Cartosat-3 on 8 December 2025, forming part of an ongoing time series of observations over the area. Located at approximately 19.82°N, 85.92°E, this scene is part of SatQuery's expanding disaster response coverage across India.",
+      "instrument": "Cartosat-3",
+      "date": "2025-12-08",
+      "latitude": 19.8245,
+      "longitude": 85.923
+    },
+    {
+      "id": "disaster-3",
+      "filename": "wayanad-landslide-disaster.jpg",
+      "caption": "Satellite view of substantial landslide damage and destructive mud flows in the Wayanad hills of Kerala, illustrating the geomorphological hazards in mountainous terrain. The Wayanad hills experienced a devastating landslide in mid-2024, triggered by intense rainfall on already saturated, steep terrain. This kind of post-event capture is a core input for damage-assessment models used by state disaster management authorities. India's exposure to floods, cyclones, and landslides makes this kind of rapid remote-sensing assessment a critical part of the national disaster-response toolkit. This frame was captured by Cartosat-3 on 10 December 2025, forming part of an ongoing time series of observations over the area. Located at approximately 11.63°N, 76.54°E, this scene is part of SatQuery's expanding disaster response coverage across India.",
+      "instrument": "Cartosat-3",
+      "date": "2025-12-10",
+      "latitude": 11.6271,
+      "longitude": 76.5416
+    },
+    {
+      "id": "disaster-4",
+      "filename": "uttarakhand-fire-disaster.jpg",
+      "caption": "This image documents forest fire smoke plumes and visible burn scars across the Uttarakhand mountains, showing the extent of wildfire damage in forested terrain. Forest fires are a recurring seasonal hazard in Uttarakhand's pine-dominated hill forests, particularly during the dry pre-monsoon months. Satellite coverage during and after a disaster gives responders a wide-area view that ground teams alone cannot achieve in the first critical hours. Because affected regions are often difficult to access by road immediately after such events, satellite imagery becomes one of the fastest ways to gauge the scale of impact. This frame was captured by Cartosat-3 on 12 December 2025, forming part of an ongoing time series of observations over the area. Located at approximately 30.55°N, 79.42°E, this scene is part of SatQuery's expanding disaster response coverage across India.",
+      "instrument": "Cartosat-3",
+      "date": "2025-12-12",
+      "latitude": 30.5527,
+      "longitude": 79.42
+    },
+    {
+      "id": "disaster-5",
+      "filename": "gujarat-earthquake-disaster.jpg",
+      "caption": "Satellite imagery of earthquake-affected areas and structural damage patterns in Gujarat, providing post-disaster impact assessment of seismic event consequences. Gujarat lies within a seismically active zone, and satellite assessment after major earthquakes helps authorities prioritize reconstruction in the hardest-hit districts. Frames like this help disaster-response agencies map the extent of damage quickly, guiding where relief teams and resources are deployed first. Documenting the aftermath of natural disasters like this supports both immediate relief efforts and longer-term planning for more resilient infrastructure. This frame was captured by Cartosat-3 on 15 December 2025, forming part of an ongoing time series of observations over the area. Located at approximately 23.03°N, 72.58°E, this scene is part of SatQuery's expanding disaster response coverage across India.",
+      "instrument": "Cartosat-3",
+      "date": "2025-12-15",
+      "latitude": 23.0304,
+      "longitude": 72.5814
+    },
+    {
+      "id": "disaster-6",
+      "filename": "assam-flood-disaster.jpg",
+      "caption": "This image shows river flood water spreading extensively across the Assam plains, documenting the large-scale inundation from seasonal river flooding and overflow events. The Brahmaputra and its tributaries flood the Assam plains almost every monsoon season, displacing large numbers of people in low-lying districts. Comparing before-and-after imagery of an event like this allows authorities to estimate affected population, damaged infrastructure, and recovery timelines. Understanding the geographic footprint of a disaster is a first step toward directing aid effectively and reducing the human and economic toll of future events. This frame was captured by Cartosat-3 on 18 December 2025, forming part of an ongoing time series of observations over the area. Located at approximately 26.20°N, 92.94°E, this scene is part of SatQuery's expanding disaster response coverage across India.",
+      "instrument": "Cartosat-3",
+      "date": "2025-12-18",
+      "latitude": 26.2006,
+      "longitude": 92.9376
+    },
+    {
+      "id": "disaster-7",
+      "filename": "andhra-cyclone-disaster.jpg",
+      "caption": "Satellite view revealing cyclone impact and significant coastal damage patterns in Andhra Pradesh, illustrating the severe effects on coastal infrastructure and settlements. Andhra Pradesh's coastline is frequently struck by cyclones forming over the Bay of Bengal, threatening both settlements and agricultural land near the shore. This kind of post-event capture is a core input for damage-assessment models used by state disaster management authorities. India's exposure to floods, cyclones, and landslides makes this kind of rapid remote-sensing assessment a critical part of the national disaster-response toolkit. This frame was captured by Cartosat-3 on 20 December 2025, forming part of an ongoing time series of observations over the area. Located at approximately 16.51°N, 81.86°E, this scene is part of SatQuery's expanding disaster response coverage across India.",
+      "instrument": "Cartosat-3",
+      "date": "2025-12-20",
+      "latitude": 16.5062,
+      "longitude": 81.8627
+    },
+    {
+      "id": "disaster-8",
+      "filename": "kerala-landslide-disaster.jpg",
+      "caption": "This image captures landslide-affected hills and debris flow patterns in Kerala, documenting the geological hazards and terrain transformation from slope failures. Kerala's steep, deforested hill slopes have become increasingly prone to landslides during periods of heavy and prolonged monsoon rainfall. Satellite coverage during and after a disaster gives responders a wide-area view that ground teams alone cannot achieve in the first critical hours. Because affected regions are often difficult to access by road immediately after such events, satellite imagery becomes one of the fastest ways to gauge the scale of impact. This frame was captured by Cartosat-3 on 22 December 2025, forming part of an ongoing time series of observations over the area. Located at approximately 10.14°N, 76.84°E, this scene is part of SatQuery's expanding disaster response coverage across India.",
+      "instrument": "Cartosat-3",
+      "date": "2025-12-22",
+      "latitude": 10.1409,
+      "longitude": 76.8409
+    },
+    {
+      "id": "disaster-9",
+      "filename": "himachal-fire-disaster.jpg",
+      "caption": "Satellite imagery of forest fire smoke dispersal and extensive woodland damage patterns in Himachal Pradesh, showing the wildfire's impact on forest cover. Dry coniferous forests in Himachal Pradesh are vulnerable to fast-spreading fires, especially in the summer months before the monsoon arrives. Frames like this help disaster-response agencies map the extent of damage quickly, guiding where relief teams and resources are deployed first. Documenting the aftermath of natural disasters like this supports both immediate relief efforts and longer-term planning for more resilient infrastructure. This frame was captured by Cartosat-3 on 25 December 2025, forming part of an ongoing time series of observations over the area. Located at approximately 31.79°N, 77.24°E, this scene is part of SatQuery's expanding disaster response coverage across India.",
+      "instrument": "Cartosat-3",
+      "date": "2025-12-25",
+      "latitude": 31.7894,
+      "longitude": 77.2425
+    },
+    {
+      "id": "disaster-10",
+      "filename": "nepal-earthquake-disaster.jpg",
+      "caption": "This image documents earthquake impact and structural damage patterns in areas near the Nepal border region, providing cross-border disaster assessment data. The Himalayan border region near Nepal sits along active fault lines, making cross-border seismic monitoring valuable for regional disaster preparedness. Comparing before-and-after imagery of an event like this allows authorities to estimate affected population, damaged infrastructure, and recovery timelines. Understanding the geographic footprint of a disaster is a first step toward directing aid effectively and reducing the human and economic toll of future events. This frame was captured by Cartosat-3 on 28 December 2025, forming part of an ongoing time series of observations over the area. Located at approximately 27.70°N, 85.30°E, this scene is part of SatQuery's expanding disaster response coverage across India.",
+      "instrument": "Cartosat-3",
+      "date": "2025-12-28",
+      "latitude": 27.7,
+      "longitude": 85.3
+    },
+    {
+      "id": "urban-1",
+      "filename": "bengaluru-urban.jpg",
+      "caption": "Satellite image showing urban city buildings and extensive concrete expansion across Bengaluru, illustrating rapid urbanization and metropolitan growth in India's technology hub. Bengaluru's growth has been driven largely by its information-technology and startup sectors, which have fueled dense commercial and residential construction over the past two decades. Repeated imagery of growing cities like this helps municipal planners track the pace of construction, land conversion, and infrastructure needs. Understanding how a city's built-up footprint changes over time is central to planning for transport, housing, and climate resilience in urban India. This frame was captured by ResourceSat-2 on 5 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 12.97°N, 77.59°E, this scene is part of SatQuery's expanding urban growth coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-05",
+      "latitude": 12.9716,
+      "longitude": 77.5946
+    },
+    {
+      "id": "urban-2",
+      "filename": "gift-city-urban.jpg",
+      "caption": "This image displays the smart city layout and modern building infrastructure of GIFT City in Gujarat, showcasing planned urban development and contemporary city planning principles. GIFT City in Gujarat was purpose-built as India's first operational smart city and international financial services hub, with infrastructure planned from the ground up rather than retrofitted. This kind of frame supports urban planners in monitoring how quickly built-up area is expanding into what was previously open or agricultural land. This kind of urban-growth data feeds into smart-city and master-plan initiatives aimed at making rapidly expanding metropolitan areas more livable. This frame was captured by ResourceSat-2 on 8 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 23.18°N, 72.66°E, this scene is part of SatQuery's expanding urban growth coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-08",
+      "latitude": 23.1815,
+      "longitude": 72.6553
+    },
+    {
+      "id": "urban-3",
+      "filename": "mumbai-urban.jpg",
+      "caption": "Dense urban city buildings and complex road networks are visible across Mumbai in this satellite view, reflecting Asia's most populous metropolitan area and urban density patterns. As the financial capital of India, Mumbai packs an extraordinarily large population into a narrow peninsula, producing some of the highest urban density levels in Asia. Change-detection analysis over cities such as this is used to update zoning maps and anticipate pressure on roads, water supply, and public services. India's cities are among the fastest-growing in the world, and satellite monitoring of this kind is essential for managing that growth sustainably. This frame was captured by ResourceSat-2 on 10 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 19.08°N, 72.88°E, this scene is part of SatQuery's expanding urban growth coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-10",
+      "latitude": 19.076,
+      "longitude": 72.8777
+    },
+    {
+      "id": "urban-4",
+      "filename": "hyderabad-urban.jpg",
+      "caption": "Satellite imagery reveals commercial buildings and significant urban growth patterns across Hyderabad, documenting the city's rapid expansion and development trajectory. Hyderabad's expansion has been closely tied to its growing information-technology and pharmaceutical industries, which have reshaped the city's western suburbs in particular. Tracking urban footprint from orbit gives city authorities an objective, wide-area measure of growth that complements ground-level planning surveys. As millions of people migrate to urban centers each year, imagery like this helps track whether infrastructure and services are keeping pace with expansion. This frame was captured by ResourceSat-2 on 13 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 17.39°N, 78.49°E, this scene is part of SatQuery's expanding urban growth coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-13",
+      "latitude": 17.385,
+      "longitude": 78.4867
+    },
+    {
+      "id": "urban-5",
+      "filename": "delhi-urban.jpg",
+      "caption": "This image shows residential colonies and organized urban layout patterns in Delhi, illustrating the national capital's expansive metropolitan area and residential infrastructure. As India's national capital, Delhi's metropolitan region has grown well beyond its original boundaries into a sprawling National Capital Region spanning multiple states. Repeated imagery of growing cities like this helps municipal planners track the pace of construction, land conversion, and infrastructure needs. Understanding how a city's built-up footprint changes over time is central to planning for transport, housing, and climate resilience in urban India. This frame was captured by ResourceSat-2 on 16 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 28.70°N, 77.10°E, this scene is part of SatQuery's expanding urban growth coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-16",
+      "latitude": 28.7041,
+      "longitude": 77.1025
+    },
+    {
+      "id": "urban-6",
+      "filename": "chennai-urban.jpg",
+      "caption": "City sprawl and infrastructure layout patterns are visible across Chennai in this satellite image, showing the southern metropolitan's urban development and expansion. Chennai's growth corridor along the IT expressway has transformed farmland on the city's outskirts into dense commercial and residential development. This kind of frame supports urban planners in monitoring how quickly built-up area is expanding into what was previously open or agricultural land. This kind of urban-growth data feeds into smart-city and master-plan initiatives aimed at making rapidly expanding metropolitan areas more livable. This frame was captured by ResourceSat-2 on 19 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 13.08°N, 80.27°E, this scene is part of SatQuery's expanding urban growth coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-19",
+      "latitude": 13.0827,
+      "longitude": 80.2707
+    },
+    {
+      "id": "urban-7",
+      "filename": "navi-mumbai-urban.jpg",
+      "caption": "Satellite view of planned township development and organized urban area layout in Navi Mumbai, illustrating systematic urban planning and modern residential infrastructure. Navi Mumbai was developed as a planned satellite city to ease congestion in Mumbai, with its layout reflecting deliberate zoning rather than organic growth. Change-detection analysis over cities such as this is used to update zoning maps and anticipate pressure on roads, water supply, and public services. India's cities are among the fastest-growing in the world, and satellite monitoring of this kind is essential for managing that growth sustainably. This frame was captured by ResourceSat-2 on 22 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 19.03°N, 73.03°E, this scene is part of SatQuery's expanding urban growth coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-22",
+      "latitude": 19.033,
+      "longitude": 73.0296
+    },
+    {
+      "id": "urban-8",
+      "filename": "kolkata-urban.jpg",
+      "caption": "Urban landscape and residential building patterns across Kolkata are captured in this image, showing the eastern metropolitan's urban sprawl and development patterns. Kolkata's urban fabric reflects centuries of layered development, from its colonial-era core to newer residential expansion at the city's periphery. Tracking urban footprint from orbit gives city authorities an objective, wide-area measure of growth that complements ground-level planning surveys. As millions of people migrate to urban centers each year, imagery like this helps track whether infrastructure and services are keeping pace with expansion. This frame was captured by ResourceSat-2 on 25 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 22.57°N, 88.36°E, this scene is part of SatQuery's expanding urban growth coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-25",
+      "latitude": 22.5726,
+      "longitude": 88.3639
+    },
+    {
+      "id": "urban-9",
+      "filename": "pune-urban.jpg",
+      "caption": "This satellite image captures city buildings and growing neighborhood patterns across Pune, reflecting the city's rapid urban expansion and infrastructure development. Pune's rapid growth has been driven by its automotive, manufacturing, and education sectors, drawing a steady influx of new residents to its outer neighborhoods. Repeated imagery of growing cities like this helps municipal planners track the pace of construction, land conversion, and infrastructure needs. Understanding how a city's built-up footprint changes over time is central to planning for transport, housing, and climate resilience in urban India. This frame was captured by ResourceSat-2 on 28 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 18.52°N, 73.86°E, this scene is part of SatQuery's expanding urban growth coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-28",
+      "latitude": 18.5204,
+      "longitude": 73.8567
+    },
+    {
+      "id": "urban-10",
+      "filename": "chandigarh-urban.jpg",
+      "caption": "The grid sector urban planning layout of Chandigarh is clearly visible in this image, showcasing the planned city's distinctive geometric design and organized infrastructure. Designed by the architect Le Corbusier, Chandigarh's grid of numbered sectors remains one of the most distinctive examples of planned urban design in India. This kind of frame supports urban planners in monitoring how quickly built-up area is expanding into what was previously open or agricultural land. This kind of urban-growth data feeds into smart-city and master-plan initiatives aimed at making rapidly expanding metropolitan areas more livable. This frame was captured by ResourceSat-2 on 1 February 2026, forming part of an ongoing time series of observations over the area. Located at approximately 30.73°N, 76.78°E, this scene is part of SatQuery's expanding urban growth coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-02-01",
+      "latitude": 30.7333,
+      "longitude": 76.7794
+    },
+    {
+      "id": "water-1",
+      "filename": "krs-water.jpg",
+      "caption": "Satellite imagery shows the water storage level and reservoir expanse at Krishnarajasagara Dam, providing data on water availability and dam capacity status. The Krishnarajasagara Dam on the Cauvery river is a critical water source for both irrigation and drinking supply across the Mysuru and Bengaluru region. Monitoring reservoirs and rivers like this over time helps water authorities plan releases, irrigation schedules, and drinking-water allocation. Because groundwater and surface water are closely linked, imagery like this helps build a fuller picture of regional water availability and stress. This frame was captured by ResourceSat-2 on 6 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 12.42°N, 76.72°E, this scene is part of SatQuery's expanding water-resource coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-06",
+      "latitude": 12.4233,
+      "longitude": 76.7208
+    },
+    {
+      "id": "water-2",
+      "filename": "dal-lake-water.jpg",
+      "caption": "This image captures the lake water expanse and houseboat settlement areas in Dal Lake, Srinagar, showing the picturesque wetland ecosystem of Kashmir. Dal Lake's floating gardens and houseboats have made it both an iconic tourist destination and an ecologically sensitive urban wetland facing pressure from sedimentation and pollution. This kind of imagery feeds into hydrological models used to track seasonal water storage trends and anticipate shortages ahead of the dry season. Wetlands and water bodies such as this also support significant biodiversity, making their monitoring valuable for conservation as well as water management. This frame was captured by ResourceSat-2 on 9 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 34.25°N, 75.58°E, this scene is part of SatQuery's expanding water-resource coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-09",
+      "latitude": 34.2518,
+      "longitude": 75.5783
+    },
+    {
+      "id": "water-3",
+      "filename": "ganga-water.jpg",
+      "caption": "Satellite view of the river flow and distinct water channel of the sacred Ganga river, illustrating the river's course and water volume through different regions. The Ganga supports one of the world's largest river basins, sustaining agriculture, drinking water, and cultural practices for hundreds of millions of people along its course. Satellite tracking of water bodies such as this supports dam-safety monitoring and helps authorities balance competing demands from agriculture, cities, and industry. With rainfall concentrated in a short monsoon window each year, monitoring water bodies like this is essential to managing supply through the rest of the year. This frame was captured by ResourceSat-2 on 12 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 25.32°N, 88.37°E, this scene is part of SatQuery's expanding water-resource coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-12",
+      "latitude": 25.3176,
+      "longitude": 88.3706
+    },
+    {
+      "id": "water-4",
+      "filename": "punjab-groundwater.jpg",
+      "caption": "This image displays groundwater levels and agricultural pond networks across Punjab, providing data on water resources for irrigation and agricultural sustainability. Punjab's heavy reliance on groundwater-fed irrigation has led to some of the steepest water-table declines recorded anywhere in India. Comparing water extent across seasons in imagery like this is a key tool for managing scarce freshwater resources in a country with highly variable rainfall. Water security is one of India's most pressing long-term challenges, making consistent satellite observation of reservoirs and rivers increasingly important. This frame was captured by ResourceSat-2 on 15 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 31.15°N, 75.34°E, this scene is part of SatQuery's expanding water-resource coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-15",
+      "latitude": 31.1471,
+      "longitude": 75.3412
+    },
+    {
+      "id": "water-5",
+      "filename": "chilika-water.jpg",
+      "caption": "Satellite imagery reveals the expansive lagoon water and vast wetland areas of Chilika Lake in Odisha, showcasing Asia's largest brackish-water lagoon ecosystem. Chilika Lake's brackish waters support one of Asia's largest wintering grounds for migratory birds, alongside a major inland fishing economy. Monitoring reservoirs and rivers like this over time helps water authorities plan releases, irrigation schedules, and drinking-water allocation. Because groundwater and surface water are closely linked, imagery like this helps build a fuller picture of regional water availability and stress. This frame was captured by ResourceSat-2 on 18 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 19.67°N, 85.23°E, this scene is part of SatQuery's expanding water-resource coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-18",
+      "latitude": 19.6727,
+      "longitude": 85.2301
+    },
+    {
+      "id": "water-6",
+      "filename": "tungabhadra-water.jpg",
+      "caption": "This image shows the reservoir water level and storage capacity at Tungabhadra Dam, providing hydrological data for water management and irrigation planning. The Tungabhadra Dam is a key multi-purpose reservoir supplying irrigation water and hydroelectric power across parts of Karnataka and Andhra Pradesh. This kind of imagery feeds into hydrological models used to track seasonal water storage trends and anticipate shortages ahead of the dry season. Wetlands and water bodies such as this also support significant biodiversity, making their monitoring valuable for conservation as well as water management. This frame was captured by ResourceSat-2 on 21 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 15.24°N, 76.39°E, this scene is part of SatQuery's expanding water-resource coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-21",
+      "latitude": 15.2404,
+      "longitude": 76.3922
+    },
+    {
+      "id": "water-7",
+      "filename": "vembanad-lake-water.jpg",
+      "caption": "Satellite view of the extensive backwaters and lake water expanse in Vembanad Lake, Kerala, illustrating the region's important water resources and ecosystem. Vembanad Lake is Kerala's largest lake and a core part of the state's backwater tourism network as well as its fisheries. Satellite tracking of water bodies such as this supports dam-safety monitoring and helps authorities balance competing demands from agriculture, cities, and industry. With rainfall concentrated in a short monsoon window each year, monitoring water bodies like this is essential to managing supply through the rest of the year. This frame was captured by ResourceSat-2 on 24 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 9.61°N, 76.40°E, this scene is part of SatQuery's expanding water-resource coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-24",
+      "latitude": 9.6115,
+      "longitude": 76.3974
+    },
+    {
+      "id": "water-8",
+      "filename": "brahmaputra-water.jpg",
+      "caption": "This image captures the wide river channel and substantial water flow of the Brahmaputra river, showing one of Asia's major river systems and its hydrogeography. The Brahmaputra's braided channel pattern shifts seasonally, and monitoring its width and flow is important for both flood forecasting and riverbank erosion management. Comparing water extent across seasons in imagery like this is a key tool for managing scarce freshwater resources in a country with highly variable rainfall. Water security is one of India's most pressing long-term challenges, making consistent satellite observation of reservoirs and rivers increasingly important. This frame was captured by ResourceSat-2 on 27 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 26.17°N, 91.73°E, this scene is part of SatQuery's expanding water-resource coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-27",
+      "latitude": 26.1684,
+      "longitude": 91.7309
+    },
+    {
+      "id": "water-9",
+      "filename": "rajasthan-groundwater.jpg",
+      "caption": "Satellite imagery shows water bodies, wells, and groundwater resource distribution in dry regions of Rajasthan, illustrating water management in arid climates. Traditional step-wells and modern tube wells both draw on Rajasthan's limited groundwater reserves, making their sustainable use a long-standing regional concern. Monitoring reservoirs and rivers like this over time helps water authorities plan releases, irrigation schedules, and drinking-water allocation. Because groundwater and surface water are closely linked, imagery like this helps build a fuller picture of regional water availability and stress. This frame was captured by ResourceSat-2 on 30 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 27.01°N, 74.22°E, this scene is part of SatQuery's expanding water-resource coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-30",
+      "latitude": 27.0124,
+      "longitude": 74.2179
+    },
+    {
+      "id": "water-10",
+      "filename": "muthupet-lagoon-water.jpg",
+      "caption": "This image reveals the coastal lagoon water expanse and mangrove forest areas in Muthupet, documenting important wetland and coastal ecosystem features. The Muthupet lagoon's mangrove fringe acts as a natural buffer against coastal storms while supporting local fishing communities. This kind of imagery feeds into hydrological models used to track seasonal water storage trends and anticipate shortages ahead of the dry season. Wetlands and water bodies such as this also support significant biodiversity, making their monitoring valuable for conservation as well as water management. This frame was captured by ResourceSat-2 on 2 February 2026, forming part of an ongoing time series of observations over the area. Located at approximately 11.30°N, 79.51°E, this scene is part of SatQuery's expanding water-resource coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-02-02",
+      "latitude": 11.3,
+      "longitude": 79.5125
+    },
+    {
+      "id": "infra-1",
+      "filename": "highway-infrastructure.jpg",
+      "caption": "Satellite image showing expressway networks and multi-lane highway road infrastructure, illustrating modern transportation corridors and road connectivity systems. Multi-lane expressways like this are part of India's ongoing effort to modernize its national highway network and cut travel times between major cities. Infrastructure imagery like this is used to track construction progress on major projects and verify that development is proceeding as planned. Because projects of this scale often unfold over several years, satellite tracking provides an independent, wide-area record of their progress. This frame was captured by Cartosat-3 on 7 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 28.50°N, 77.01°E, this scene is part of SatQuery's expanding infrastructure coverage across India.",
+      "instrument": "Cartosat-3",
+      "date": "2026-01-07",
+      "latitude": 28.5041,
+      "longitude": 77.0066
+    },
+    {
+      "id": "infra-2",
+      "filename": "mundra-port-infrastructure.jpg",
+      "caption": "This image captures port terminal facilities, shipping docks, and cargo vessel operations at Mundra Port in Gujarat, showing major maritime trade infrastructure. Mundra Port in Gujarat is one of India's largest private ports, handling a substantial share of the country's containerized cargo traffic. This kind of frame supports logistics and transport planners in assessing capacity, congestion, and the need for future expansion. Infrastructure at this scale often anchors regional economic activity, drawing supporting industries and employment to the surrounding area. This frame was captured by Cartosat-3 on 10 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 22.74°N, 69.63°E, this scene is part of SatQuery's expanding infrastructure coverage across India.",
+      "instrument": "Cartosat-3",
+      "date": "2026-01-10",
+      "latitude": 22.7411,
+      "longitude": 69.631
+    },
+    {
+      "id": "infra-3",
+      "filename": "bhadla-solar-infrastructure.jpg",
+      "caption": "Satellite view of the extensive solar panel photovoltaic array field at Bhadla Solar Park in Rajasthan, illustrating renewable energy infrastructure development. Bhadla Solar Park in Rajasthan's Thar Desert is among the largest solar power installations in the world, taking advantage of the region's high solar irradiance. Monitoring facilities such as this from orbit helps agencies audit large infrastructure investments and evaluate their utilization over time. Investment in infrastructure of this kind underpins India's broader economic growth, connecting production centers to markets both domestically and overseas. This frame was captured by Cartosat-3 on 13 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 27.03°N, 71.43°E, this scene is part of SatQuery's expanding infrastructure coverage across India.",
+      "instrument": "Cartosat-3",
+      "date": "2026-01-13",
+      "latitude": 27.0308,
+      "longitude": 71.4303
+    },
+    {
+      "id": "infra-4",
+      "filename": "airport-infrastructure.jpg",
+      "caption": "This image shows airport runway configuration, terminal buildings, and aircraft parking areas, documenting civil aviation infrastructure and aerodrome facilities. Airport facilities like this reflect the rapid growth of India's domestic aviation sector, which has expanded to serve a growing number of smaller cities. Change detection over infrastructure sites like this can reveal how quickly a project has scaled up since it first became operational. As trade volumes and energy demand rise, facilities like this play an outsized role in the country's long-term development plans. This frame was captured by Cartosat-3 on 16 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 28.57°N, 77.10°E, this scene is part of SatQuery's expanding infrastructure coverage across India.",
+      "instrument": "Cartosat-3",
+      "date": "2026-01-16",
+      "latitude": 28.57,
+      "longitude": 77.1025
+    },
+    {
+      "id": "infra-5",
+      "filename": "railway-infrastructure.jpg",
+      "caption": "Satellite imagery reveals railway track networks and station yard facilities, showing rail transportation infrastructure and rail network connectivity. Rail yards and track networks such as this form the backbone of freight and passenger movement across India's vast rail system, one of the largest in the world. Infrastructure imagery like this is used to track construction progress on major projects and verify that development is proceeding as planned. Because projects of this scale often unfold over several years, satellite tracking provides an independent, wide-area record of their progress. This frame was captured by Cartosat-3 on 19 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 28.54°N, 77.09°E, this scene is part of SatQuery's expanding infrastructure coverage across India.",
+      "instrument": "Cartosat-3",
+      "date": "2026-01-19",
+      "latitude": 28.5409,
+      "longitude": 77.0937
+    },
+    {
+      "id": "infra-6",
+      "filename": "vadodara-highway.jpg",
+      "caption": "This image displays expressway road infrastructure and highway corridor near Vadodara, illustrating modern transportation networks in Gujarat. The highway corridor near Vadodara links Gujarat's major industrial centers, supporting the state's manufacturing and petrochemical sectors. This kind of frame supports logistics and transport planners in assessing capacity, congestion, and the need for future expansion. Infrastructure at this scale often anchors regional economic activity, drawing supporting industries and employment to the surrounding area. This frame was captured by Cartosat-3 on 22 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 22.31°N, 73.18°E, this scene is part of SatQuery's expanding infrastructure coverage across India.",
+      "instrument": "Cartosat-3",
+      "date": "2026-01-22",
+      "latitude": 22.3072,
+      "longitude": 73.1812
+    },
+    {
+      "id": "infra-7",
+      "filename": "visakhapatnam-port.jpg",
+      "caption": "Satellite view of the port harbor, shipping terminals, and maritime shipping infrastructure at Visakhapatnam, showing major coastal trade facilities. Visakhapatnam's port is a major gateway for the east coast, handling cargo ranging from iron ore to petroleum products. Monitoring facilities such as this from orbit helps agencies audit large infrastructure investments and evaluate their utilization over time. Investment in infrastructure of this kind underpins India's broader economic growth, connecting production centers to markets both domestically and overseas. This frame was captured by Cartosat-3 on 25 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 17.69°N, 83.32°E, this scene is part of SatQuery's expanding infrastructure coverage across India.",
+      "instrument": "Cartosat-3",
+      "date": "2026-01-25",
+      "latitude": 17.6869,
+      "longitude": 83.3184
+    },
+    {
+      "id": "infra-8",
+      "filename": "rewa-solar.jpg",
+      "caption": "This image reveals the solar power plant panel arrays and renewable energy facilities in Rewa, Madhya Pradesh, documenting solar energy infrastructure development. The Rewa Ultra Mega Solar Park in Madhya Pradesh was among the early large-scale solar projects to supply power directly to interstate consumers, including the Delhi Metro. Change detection over infrastructure sites like this can reveal how quickly a project has scaled up since it first became operational. As trade volumes and energy demand rise, facilities like this play an outsized role in the country's long-term development plans. This frame was captured by Cartosat-3 on 28 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 24.54°N, 81.31°E, this scene is part of SatQuery's expanding infrastructure coverage across India.",
+      "instrument": "Cartosat-3",
+      "date": "2026-01-28",
+      "latitude": 24.5357,
+      "longitude": 81.3108
+    },
+    {
+      "id": "infra-9",
+      "filename": "lucknow-airport.jpg",
+      "caption": "Satellite imagery shows the airport runway layout and infrastructure facilities at Lucknow Airport, illustrating regional aviation infrastructure. Lucknow Airport serves as a key aviation hub for Uttar Pradesh, connecting the state capital to major domestic and select international destinations. Infrastructure imagery like this is used to track construction progress on major projects and verify that development is proceeding as planned. Because projects of this scale often unfold over several years, satellite tracking provides an independent, wide-area record of their progress. This frame was captured by Cartosat-3 on 31 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 26.76°N, 80.89°E, this scene is part of SatQuery's expanding infrastructure coverage across India.",
+      "instrument": "Cartosat-3",
+      "date": "2026-01-31",
+      "latitude": 26.7606,
+      "longitude": 80.891
+    },
+    {
+      "id": "infra-10",
+      "filename": "darjeeling-railway.jpg",
+      "caption": "This image captures the distinctive mountain railway tracks passing through steep hills in Darjeeling, showing the famous Himalayan railway infrastructure. The Darjeeling Himalayan Railway, a UNESCO World Heritage Site, winds through steep mountain terrain on narrow-gauge track first built in the 19th century. This kind of frame supports logistics and transport planners in assessing capacity, congestion, and the need for future expansion. Infrastructure at this scale often anchors regional economic activity, drawing supporting industries and employment to the surrounding area. This frame was captured by Cartosat-3 on 3 February 2026, forming part of an ongoing time series of observations over the area. Located at approximately 27.04°N, 88.27°E, this scene is part of SatQuery's expanding infrastructure coverage across India.",
+      "instrument": "Cartosat-3",
+      "date": "2026-02-03",
+      "latitude": 27.0404,
+      "longitude": 88.2707
+    },
+    {
+      "id": "env-1",
+      "filename": "delhi-environment.jpg",
+      "caption": "Satellite image showing urban heat island effects and smog accumulation over Delhi, illustrating air quality and atmospheric pollution patterns over the capital. Delhi's winter smog is driven by a combination of vehicle emissions, crop-residue burning in neighbouring states, and stagnant weather conditions that trap pollutants near the surface. Imagery like this is used by pollution-control boards to track how air quality and haze levels shift with seasons and weather patterns. Because environmental processes like this often unfold gradually, consistent satellite observation is one of the few ways to detect meaningful change over time. This frame was captured by ResourceSat-2 on 8 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 28.70°N, 77.10°E, this scene is part of SatQuery's expanding environmental coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-08",
+      "latitude": 28.7041,
+      "longitude": 77.1025
+    },
+    {
+      "id": "env-2",
+      "filename": "gangetic-environment.jpg",
+      "caption": "This image displays air quality and particulate matter haze over the Gangetic plain region, showing atmospheric pollution and seasonal smog formation. The Indo-Gangetic plain regularly experiences some of the highest particulate pollution levels in the world during the post-monsoon and winter months. This kind of environmental frame supports scientists studying long-term change in ecosystems that are sensitive to climate and human activity. Understanding shifts like this is increasingly important as climate variability puts additional stress on already-sensitive natural systems. This frame was captured by ResourceSat-2 on 11 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 25.00°N, 84.00°E, this scene is part of SatQuery's expanding environmental coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-11",
+      "latitude": 25.0,
+      "longitude": 84.0
+    },
+    {
+      "id": "env-3",
+      "filename": "kerala-environment.jpg",
+      "caption": "Satellite view of coastal erosion patterns and shoreline changes along Kerala's coast, illustrating the impacts of wave action and climate-induced coastal changes. Kerala's coastline has seen increasing erosion in recent years, attributed to a mix of natural wave dynamics and coastal construction that disrupts sediment flow. Repeated observation of conditions like this helps researchers separate short-term weather effects from longer-term environmental trends. Environmental change of this kind has direct consequences for public health, agriculture, and water security in the affected region. This frame was captured by ResourceSat-2 on 14 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 10.00°N, 76.50°E, this scene is part of SatQuery's expanding environmental coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-14",
+      "latitude": 10.0,
+      "longitude": 76.5
+    },
+    {
+      "id": "env-4",
+      "filename": "himalaya-environment.jpg",
+      "caption": "This image shows glacier retreat patterns and mountain terrain changes in the Himalayas, documenting climate change impacts on glacial systems. Himalayan glaciers feed major river systems across South Asia, and their retreat is a closely watched indicator of regional climate change. Data of this kind feeds into environmental monitoring programs that track how quickly conditions are changing across vulnerable regions. Tracking these environmental indicators from space gives policymakers evidence to design more targeted mitigation and adaptation measures. This frame was captured by ResourceSat-2 on 17 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 28.00°N, 84.00°E, this scene is part of SatQuery's expanding environmental coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-17",
+      "latitude": 28.0,
+      "longitude": 84.0
+    },
+    {
+      "id": "env-5",
+      "filename": "estuary-environment.jpg",
+      "caption": "Satellite imagery reveals coastal estuary water patterns and silt accumulation processes, showing dynamic sediment transport in coastal systems. Estuaries like this are dynamic zones where river sediment meets tidal action, constantly reshaping channels and mudflats. Imagery like this is used by pollution-control boards to track how air quality and haze levels shift with seasons and weather patterns. Because environmental processes like this often unfold gradually, consistent satellite observation is one of the few ways to detect meaningful change over time. This frame was captured by ResourceSat-2 on 20 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 21.00°N, 72.00°E, this scene is part of SatQuery's expanding environmental coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-20",
+      "latitude": 21.0,
+      "longitude": 72.0
+    },
+    {
+      "id": "env-6",
+      "filename": "mumbai-heat.jpg",
+      "caption": "This image displays urban heat map visualization and warm temperature zones across Mumbai, illustrating the metropolitan heat island phenomenon. Urban heat islands like the one visible over Mumbai form as concrete and asphalt absorb and re-radiate heat more than natural vegetated surfaces would. This kind of environmental frame supports scientists studying long-term change in ecosystems that are sensitive to climate and human activity. Understanding shifts like this is increasingly important as climate variability puts additional stress on already-sensitive natural systems. This frame was captured by ResourceSat-2 on 23 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 19.08°N, 72.88°E, this scene is part of SatQuery's expanding environmental coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-23",
+      "latitude": 19.076,
+      "longitude": 72.8777
+    },
+    {
+      "id": "env-7",
+      "filename": "delhi-air-quality.jpg",
+      "caption": "Satellite view showing smog haze and poor air quality patterns over Delhi, documenting seasonal air pollution and atmospheric conditions. Seasonal air-quality crises in Delhi have made the city a focal point for both domestic pollution-control policy and international environmental monitoring. Repeated observation of conditions like this helps researchers separate short-term weather effects from longer-term environmental trends. Environmental change of this kind has direct consequences for public health, agriculture, and water security in the affected region. This frame was captured by ResourceSat-2 on 26 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 28.70°N, 77.10°E, this scene is part of SatQuery's expanding environmental coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-26",
+      "latitude": 28.7041,
+      "longitude": 77.1025
+    },
+    {
+      "id": "env-8",
+      "filename": "odisha-coast-erosion.jpg",
+      "caption": "This image captures coastline erosion patterns and beach morphological changes along the Odisha coast, showing ongoing coastal dynamic processes. Coastal erosion along Odisha's shoreline has, in places, forced the relocation of villages as the sea encroaches on previously inhabited land. Data of this kind feeds into environmental monitoring programs that track how quickly conditions are changing across vulnerable regions. Tracking these environmental indicators from space gives policymakers evidence to design more targeted mitigation and adaptation measures. This frame was captured by ResourceSat-2 on 29 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 19.50°N, 85.50°E, this scene is part of SatQuery's expanding environmental coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-29",
+      "latitude": 19.5,
+      "longitude": 85.5
+    },
+    {
+      "id": "env-9",
+      "filename": "sikkim-glacier.jpg",
+      "caption": "Satellite imagery reveals glacial ice melt patterns and mountain peak features in Sikkim, documenting cryospheric changes in the eastern Himalayas. Glacial lakes forming in Sikkim as ice melts are being closely monitored for the risk of sudden glacial lake outburst floods downstream. Imagery like this is used by pollution-control boards to track how air quality and haze levels shift with seasons and weather patterns. Because environmental processes like this often unfold gradually, consistent satellite observation is one of the few ways to detect meaningful change over time. This frame was captured by ResourceSat-2 on 1 February 2026, forming part of an ongoing time series of observations over the area. Located at approximately 27.51°N, 88.51°E, this scene is part of SatQuery's expanding environmental coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-02-01",
+      "latitude": 27.5133,
+      "longitude": 88.5133
+    },
+    {
+      "id": "env-10",
+      "filename": "kakinada-estuary.jpg",
+      "caption": "This image shows the coastal estuary channel system and environmental features in Kakinada, illustrating important coastal-marine ecosystem characteristics. The Kakinada estuary sits where the Godavari river system meets the Bay of Bengal, forming a productive but environmentally sensitive coastal-marine zone. This kind of environmental frame supports scientists studying long-term change in ecosystems that are sensitive to climate and human activity. Understanding shifts like this is increasingly important as climate variability puts additional stress on already-sensitive natural systems. This frame was captured by ResourceSat-2 on 4 February 2026, forming part of an ongoing time series of observations over the area. Located at approximately 16.99°N, 82.25°E, this scene is part of SatQuery's expanding environmental coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-02-04",
+      "latitude": 16.9891,
+      "longitude": 82.2475
+    },
+    {
+      "id": "mining-1",
+      "filename": "bellary-mining.jpg",
+      "caption": "Satellite image showing open-cast iron ore mining pits and excavation operations near Bellary, illustrating large-scale mineral extraction activities. The Bellary-Hospet belt in Karnataka is one of India's most significant iron ore mining regions, historically linked to both export demand and disputes over unregulated extraction. Imagery like this helps regulators verify that mining operations remain within their permitted lease boundaries. As demand for these raw materials continues, tracking the footprint of mining activity becomes an important part of managing its long-term impact. This frame was captured by ResourceSat-2 on 9 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 15.15°N, 76.93°E, this scene is part of SatQuery's expanding mining and land-use coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-09",
+      "latitude": 15.1496,
+      "longitude": 76.9294
+    },
+    {
+      "id": "mining-2",
+      "filename": "jharia-mining.jpg",
+      "caption": "This image displays coal mining field operations and extensive excavation areas in Jharia, documenting coal extraction and mining infrastructure. Jharia's coalfields are notorious for underground fires that have burned for decades, complicating both extraction and resettlement of nearby communities. Change detection over mining sites such as this is used to estimate the pace of extraction and the extent of land disturbance over time. Because mining reshapes terrain permanently, satellite records like this provide a useful baseline for eventual land rehabilitation efforts. This frame was captured by ResourceSat-2 on 12 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 23.85°N, 84.83°E, this scene is part of SatQuery's expanding mining and land-use coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-12",
+      "latitude": 23.8456,
+      "longitude": 84.832
+    },
+    {
+      "id": "mining-3",
+      "filename": "jaisalmer-mining.jpg",
+      "caption": "Satellite view of limestone quarrying operations and stone extraction activities in Jaisalmer, showing mining pit formations and quarry infrastructure. Rajasthan's limestone deposits around Jaisalmer feed the state's substantial cement manufacturing industry. This kind of frame supports environmental compliance monitoring, flagging unauthorized expansion or encroachment into protected areas. Mineral extraction at this scale is economically important, but it also reshapes landscapes and can affect nearby water and forest resources if left unmonitored. This frame was captured by ResourceSat-2 on 15 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 26.91°N, 70.93°E, this scene is part of SatQuery's expanding mining and land-use coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-15",
+      "latitude": 26.9124,
+      "longitude": 70.9289
+    },
+    {
+      "id": "mining-4",
+      "filename": "korba-mining.jpg",
+      "caption": "This image reveals open pit coal mining areas and extensive excavation sites in Korba, illustrating large-scale coal extraction operations. Korba in Chhattisgarh hosts some of India's largest open-pit coal mines, feeding several major thermal power plants clustered in the district. Satellite tracking of mining landscapes like this gives regulators an independent check on activity that can be difficult to monitor comprehensively from the ground. Balancing resource extraction with environmental protection is an ongoing challenge in mineral-rich regions like this one. This frame was captured by ResourceSat-2 on 18 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 22.37°N, 82.69°E, this scene is part of SatQuery's expanding mining and land-use coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-18",
+      "latitude": 22.3706,
+      "longitude": 82.6856
+    },
+    {
+      "id": "mining-5",
+      "filename": "odisha-mining.jpg",
+      "caption": "Satellite imagery shows bauxite strip mining operations and mining pit formations in Odisha, documenting aluminum ore extraction activities. Odisha holds a large share of India's bauxite reserves, the primary ore used to produce aluminum, though mining here has also drawn scrutiny over impacts on tribal forest land. Imagery like this helps regulators verify that mining operations remain within their permitted lease boundaries. As demand for these raw materials continues, tracking the footprint of mining activity becomes an important part of managing its long-term impact. This frame was captured by ResourceSat-2 on 21 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 22.25°N, 84.50°E, this scene is part of SatQuery's expanding mining and land-use coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-21",
+      "latitude": 22.2504,
+      "longitude": 84.5023
+    },
+    {
+      "id": "mining-6",
+      "filename": "dhanbad-iron-ore.jpg",
+      "caption": "This image captures iron ore mining activities and excavation patterns in Dhanbad, showing mineral extraction and mining landscape transformation. Dhanbad, often called the coal capital of India, sits at the heart of the Jharia coalfield and has a mining history stretching back over a century. Change detection over mining sites such as this is used to estimate the pace of extraction and the extent of land disturbance over time. Because mining reshapes terrain permanently, satellite records like this provide a useful baseline for eventual land rehabilitation efforts. This frame was captured by ResourceSat-2 on 24 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 23.80°N, 86.43°E, this scene is part of SatQuery's expanding mining and land-use coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-24",
+      "latitude": 23.7957,
+      "longitude": 86.4304
+    },
+    {
+      "id": "mining-7",
+      "filename": "singrauli-coal.jpg",
+      "caption": "Satellite view of the coal mining belt and open-pit mining operations in Singrauli, illustrating extensive coal extraction infrastructure. The Singrauli coal belt straddling Madhya Pradesh and Uttar Pradesh supplies fuel to a dense cluster of coal-fired power stations, earning the area the nickname 'Energy Capital of India.' This kind of frame supports environmental compliance monitoring, flagging unauthorized expansion or encroachment into protected areas. Mineral extraction at this scale is economically important, but it also reshapes landscapes and can affect nearby water and forest resources if left unmonitored. This frame was captured by ResourceSat-2 on 27 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 24.18°N, 82.67°E, this scene is part of SatQuery's expanding mining and land-use coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-27",
+      "latitude": 24.1819,
+      "longitude": 82.6698
+    },
+    {
+      "id": "mining-8",
+      "filename": "kota-limestone.jpg",
+      "caption": "This image shows limestone quarry operations and stone mining activities near Kota, documenting lime stone extraction and quarry landscape. Limestone quarrying near Kota supports Rajasthan's cement industry and has left a landscape marked by extensive terraced pits. Satellite tracking of mining landscapes like this gives regulators an independent check on activity that can be difficult to monitor comprehensively from the ground. Balancing resource extraction with environmental protection is an ongoing challenge in mineral-rich regions like this one. This frame was captured by ResourceSat-2 on 30 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 25.21°N, 75.87°E, this scene is part of SatQuery's expanding mining and land-use coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-30",
+      "latitude": 25.2108,
+      "longitude": 75.8653
+    },
+    {
+      "id": "mining-9",
+      "filename": "balaghat-bauxite.jpg",
+      "caption": "Satellite imagery reveals bauxite and manganese mining operations on hills in Balaghat, showing multi-mineral extraction landscape and mining activities. Balaghat's hills contain both bauxite and manganese deposits, making it one of the few Indian districts with significant multi-mineral extraction. Imagery like this helps regulators verify that mining operations remain within their permitted lease boundaries. As demand for these raw materials continues, tracking the footprint of mining activity becomes an important part of managing its long-term impact. This frame was captured by ResourceSat-2 on 2 February 2026, forming part of an ongoing time series of observations over the area. Located at approximately 22.13°N, 80.83°E, this scene is part of SatQuery's expanding mining and land-use coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-02-02",
+      "latitude": 22.1303,
+      "longitude": 80.8309
+    },
+    {
+      "id": "mining-10",
+      "filename": "kolar-gold.jpg",
+      "caption": "This image displays historical gold mining shafts and land area modifications in Kolar, documenting the region's mining heritage and landscape changes. The Kolar Gold Fields were once among the deepest gold mines in the world, and although large-scale extraction ended decades ago, the landscape still bears the marks of over a century of mining. Change detection over mining sites such as this is used to estimate the pace of extraction and the extent of land disturbance over time. Because mining reshapes terrain permanently, satellite records like this provide a useful baseline for eventual land rehabilitation efforts. This frame was captured by ResourceSat-2 on 5 February 2026, forming part of an ongoing time series of observations over the area. Located at approximately 13.15°N, 78.13°E, this scene is part of SatQuery's expanding mining and land-use coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-02-05",
+      "latitude": 13.1529,
+      "longitude": 78.1302
+    },
+    {
+      "id": "ocean-1",
+      "filename": "kochi-ocean.jpg",
+      "caption": "Satellite view of the coastal sea water and wave patterns near Kochi, showing marine conditions and coastal dynamics along Kerala's coast. Kochi's coastal waters sit along one of Kerala's busiest fishing and shipping corridors, shaped by both monsoon wave action and harbor traffic. Coastal imagery like this supports fisheries management, helping authorities track productive waters and monitor for illegal or unsustainable fishing activity. As coastal development accelerates, tracking changes in shoreline and near-shore waters helps balance growth with ecological protection. This frame was captured by ResourceSat-2 on 10 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 9.97°N, 76.24°E, this scene is part of SatQuery's expanding coastal and marine coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-10",
+      "latitude": 9.9689,
+      "longitude": 76.2393
+    },
+    {
+      "id": "ocean-2",
+      "filename": "mumbai-ocean.jpg",
+      "caption": "This image captures the Arabian Sea water expanse and coastal shoreline features near Mumbai, illustrating marine conditions and coastal geography. The Arabian Sea waters off Mumbai see heavy vessel traffic tied to the city's status as one of India's busiest port cities. This kind of frame is used to monitor shifts in shoreline position, sediment movement, and near-shore water quality over time. Marine environments such as this also play a role in regional climate patterns, linking their health to broader environmental stability. This frame was captured by ResourceSat-2 on 13 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 19.08°N, 72.88°E, this scene is part of SatQuery's expanding coastal and marine coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-13",
+      "latitude": 19.076,
+      "longitude": 72.8777
+    },
+    {
+      "id": "ocean-3",
+      "filename": "andaman-ocean.jpg",
+      "caption": "Satellite imagery reveals clear blue ocean water and pristine sea conditions around the Andaman Islands, showing tropical marine environments. The Andaman Islands' surrounding waters are known for exceptional clarity and coral biodiversity, making them a priority area for marine conservation. Satellite observation of marine areas such as this feeds into broader ocean-monitoring programs tracking temperature, currents, and ecosystem health. India's coastline supports tens of millions of livelihoods tied to fishing, shipping, and tourism, making its ongoing monitoring economically significant. This frame was captured by ResourceSat-2 on 16 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 11.74°N, 92.74°E, this scene is part of SatQuery's expanding coastal and marine coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-16",
+      "latitude": 11.7401,
+      "longitude": 92.7365
+    },
+    {
+      "id": "ocean-4",
+      "filename": "chennai-ocean.jpg",
+      "caption": "This image shows the Bay of Bengal coastal water features near Chennai beach, illustrating coastal marine conditions and water dynamics. Chennai's Bay of Bengal shoreline is a popular urban beach front that also experiences seasonal changes in wave energy and sediment deposition. Coastal and marine data like this supports both tourism planning and disaster preparedness for cyclone-prone shorelines. Coastal and marine ecosystems like this are often highly sensitive to both natural variability and human pressure, making regular observation valuable. This frame was captured by ResourceSat-2 on 19 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 13.08°N, 80.27°E, this scene is part of SatQuery's expanding coastal and marine coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-19",
+      "latitude": 13.0827,
+      "longitude": 80.2707
+    },
+    {
+      "id": "ocean-5",
+      "filename": "lakshadweep-ocean.jpg",
+      "caption": "Satellite view of atolls, shallow blue-green ocean water, and maritime features around the Lakshadweep Islands, showing coral atoll ecosystems. Lakshadweep's coral atolls form a fragile ecosystem highly sensitive to rising sea temperatures and coral bleaching events. Coastal imagery like this supports fisheries management, helping authorities track productive waters and monitor for illegal or unsustainable fishing activity. As coastal development accelerates, tracking changes in shoreline and near-shore waters helps balance growth with ecological protection. This frame was captured by ResourceSat-2 on 22 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 10.57°N, 72.64°E, this scene is part of SatQuery's expanding coastal and marine coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-22",
+      "latitude": 10.5667,
+      "longitude": 72.6417
+    },
+    {
+      "id": "ocean-6",
+      "filename": "rameswaram-coral.jpg",
+      "caption": "This image captures coral reef waters and shallow sea conditions near Rameswaram, documenting marine biodiversity hotspots and coral ecosystems. The waters near Rameswaram lie within the Gulf of Mannar Marine Biosphere Reserve, one of India's richest marine biodiversity zones. This kind of frame is used to monitor shifts in shoreline position, sediment movement, and near-shore water quality over time. Marine environments such as this also play a role in regional climate patterns, linking their health to broader environmental stability. This frame was captured by ResourceSat-2 on 25 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 9.29°N, 79.18°E, this scene is part of SatQuery's expanding coastal and marine coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-25",
+      "latitude": 9.2876,
+      "longitude": 79.1788
+    },
+    {
+      "id": "ocean-7",
+      "filename": "mumbai-oil-spill.jpg",
+      "caption": "Satellite imagery showing coastal waters and maritime monitoring data near Mumbai, illustrating marine pollution monitoring and ocean surveillance. Coastal waters off Mumbai are periodically monitored for oil-spill risk given the density of shipping and offshore petroleum infrastructure in the area. Satellite observation of marine areas such as this feeds into broader ocean-monitoring programs tracking temperature, currents, and ecosystem health. India's coastline supports tens of millions of livelihoods tied to fishing, shipping, and tourism, making its ongoing monitoring economically significant. This frame was captured by ResourceSat-2 on 28 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 19.08°N, 72.88°E, this scene is part of SatQuery's expanding coastal and marine coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-28",
+      "latitude": 19.076,
+      "longitude": 72.8777
+    },
+    {
+      "id": "ocean-8",
+      "filename": "goa-upwelling.jpg",
+      "caption": "This image reveals coastal sea water patterns and ocean surface features near Goa, documenting upwelling phenomena and coastal oceanographic patterns. Seasonal upwelling off Goa's coast brings nutrient-rich deep water to the surface, supporting productive fisheries during certain months of the year. Coastal and marine data like this supports both tourism planning and disaster preparedness for cyclone-prone shorelines. Coastal and marine ecosystems like this are often highly sensitive to both natural variability and human pressure, making regular observation valuable. This frame was captured by ResourceSat-2 on 31 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 15.30°N, 73.83°E, this scene is part of SatQuery's expanding coastal and marine coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-31",
+      "latitude": 15.3017,
+      "longitude": 73.8316
+    },
+    {
+      "id": "ocean-9",
+      "filename": "puri-coast.jpg",
+      "caption": "Satellite view of beach coastline features and sea wave patterns in Puri, showing coastal geography and marine dynamics along Odisha's coast. Puri's coastline along Odisha is both a major pilgrimage destination and an area of active coastal erosion monitoring. Coastal imagery like this supports fisheries management, helping authorities track productive waters and monitor for illegal or unsustainable fishing activity. As coastal development accelerates, tracking changes in shoreline and near-shore waters helps balance growth with ecological protection. This frame was captured by ResourceSat-2 on 3 February 2026, forming part of an ongoing time series of observations over the area. Located at approximately 19.81°N, 85.83°E, this scene is part of SatQuery's expanding coastal and marine coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-02-03",
+      "latitude": 19.8136,
+      "longitude": 85.8349
+    },
+    {
+      "id": "ocean-10",
+      "filename": "tuticorin-fishing.jpg",
+      "caption": "This image displays the fishing harbor infrastructure and coastal waters in Tuticorin, documenting marine fishing operations and coastal livelihoods. Tuticorin's fishing harbor is one of Tamil Nadu's principal centers for marine fishing and seafood processing activity. This kind of frame is used to monitor shifts in shoreline position, sediment movement, and near-shore water quality over time. Marine environments such as this also play a role in regional climate patterns, linking their health to broader environmental stability. This frame was captured by ResourceSat-2 on 6 February 2026, forming part of an ongoing time series of observations over the area. Located at approximately 8.78°N, 78.13°E, this scene is part of SatQuery's expanding coastal and marine coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-02-06",
+      "latitude": 8.7832,
+      "longitude": 78.1289
+    },
+    {
+      "id": "forest-1",
+      "filename": "nilgiris-forest.jpg",
+      "caption": "Satellite image showing dense forest tree canopy coverage across the Nilgiris (Blue Mountains) region, illustrating biodiversity-rich montane forest ecosystem. The Nilgiris form part of the Western Ghats-Nilgiris UNESCO Biosphere Reserve and are home to species such as the Nilgiri tahr, found nowhere else on Earth. Forest-cover imagery like this supports conservation authorities in tracking deforestation, regrowth, and the boundaries of protected habitat. Healthy forest cover in areas like this also plays a role in regulating local rainfall patterns and protecting watersheds downstream. This frame was captured by ResourceSat-2 on 11 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 11.41°N, 76.72°E, this scene is part of SatQuery's expanding forest-cover coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-11",
+      "latitude": 11.4143,
+      "longitude": 76.717
+    },
+    {
+      "id": "forest-2",
+      "filename": "similipal-forest.jpg",
+      "caption": "This image displays green forest vegetation and hilly terrain across Similipal National Park, documenting forest cover and wildlife habitat protection. Similipal National Park is one of India's designated tiger reserves and biosphere reserves, known for its mix of sal forest and grassland habitat. This kind of frame is used to monitor wildlife corridors and assess how fragmented or continuous forest habitat remains over time. Because many of these forests host endangered or endemic species, tracking their extent and condition is a conservation priority. This frame was captured by ResourceSat-2 on 14 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 21.82°N, 87.30°E, this scene is part of SatQuery's expanding forest-cover coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-14",
+      "latitude": 21.8213,
+      "longitude": 87.3036
+    },
+    {
+      "id": "forest-3",
+      "filename": "western-ghats-forest.jpg",
+      "caption": "Satellite view showing thick, dense forest vegetation coverage across the Western Ghats mountain range, illustrating this biodiversity hotspot's forest extent. The Western Ghats are recognized as one of the world's biodiversity hotspots, hosting thousands of endemic plant and animal species. Satellite tracking of forested landscapes such as this helps flag illegal logging or encroachment before it spreads further. Forests like this support globally significant biodiversity, and their protection is central to both regional conservation efforts and India's broader climate commitments. This frame was captured by ResourceSat-2 on 17 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 12.50°N, 75.30°E, this scene is part of SatQuery's expanding forest-cover coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-17",
+      "latitude": 12.5,
+      "longitude": 75.3
+    },
+    {
+      "id": "forest-4",
+      "filename": "sundarbans-forest.jpg",
+      "caption": "This image captures the unique mangrove forest ecosystem and river delta patterns in the Sundarbans, showing the world's largest mangrove forest system. The Sundarbans mangrove forest, shared between India and Bangladesh, is the largest single block of mangrove forest in the world and a critical Bengal tiger habitat. Change detection over forest areas like this feeds into national reporting on tree cover, carbon storage, and biodiversity protection. As pressure on forest land from agriculture and development continues, monitoring landscapes like this helps balance conservation with other land-use needs. This frame was captured by ResourceSat-2 on 20 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 21.95°N, 89.15°E, this scene is part of SatQuery's expanding forest-cover coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-20",
+      "latitude": 21.9497,
+      "longitude": 89.1547
+    },
+    {
+      "id": "forest-5",
+      "filename": "bandipur-forest.jpg",
+      "caption": "Satellite imagery reveals deciduous woodland vegetation and wildlife forest habitat in Bandipur National Park, documenting forest conservation areas. Bandipur National Park forms part of the larger Nilgiri Biosphere Reserve and holds one of India's healthier wild tiger populations. Forest-cover imagery like this supports conservation authorities in tracking deforestation, regrowth, and the boundaries of protected habitat. Healthy forest cover in areas like this also plays a role in regulating local rainfall patterns and protecting watersheds downstream. This frame was captured by ResourceSat-2 on 23 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 11.54°N, 76.42°E, this scene is part of SatQuery's expanding forest-cover coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-23",
+      "latitude": 11.5408,
+      "longitude": 76.4226
+    },
+    {
+      "id": "forest-6",
+      "filename": "tadoba-forest.jpg",
+      "caption": "This image shows forest woodland vegetation and tiger reserve areas in Tadoba Andhari National Park, illustrating wildlife habitat and forest conservation. Tadoba Andhari Tiger Reserve is Maharashtra's oldest and largest national park, known for a high density of tiger sightings relative to its size. This kind of frame is used to monitor wildlife corridors and assess how fragmented or continuous forest habitat remains over time. Because many of these forests host endangered or endemic species, tracking their extent and condition is a conservation priority. This frame was captured by ResourceSat-2 on 26 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 19.31°N, 80.59°E, this scene is part of SatQuery's expanding forest-cover coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-26",
+      "latitude": 19.3051,
+      "longitude": 80.5903
+    },
+    {
+      "id": "forest-7",
+      "filename": "bhitarkanika-mangrove.jpg",
+      "caption": "Satellite view of the mangrove forest ecosystem and tidal creek systems in Bhitarkanika National Park, showing coastal mangrove habitat. Bhitarkanika's mangrove creeks provide critical habitat for saltwater crocodiles alongside a rich diversity of mangrove-dependent species. Satellite tracking of forested landscapes such as this helps flag illegal logging or encroachment before it spreads further. Forests like this support globally significant biodiversity, and their protection is central to both regional conservation efforts and India's broader climate commitments. This frame was captured by ResourceSat-2 on 29 January 2026, forming part of an ongoing time series of observations over the area. Located at approximately 19.65°N, 86.99°E, this scene is part of SatQuery's expanding forest-cover coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-01-29",
+      "latitude": 19.6537,
+      "longitude": 86.9935
+    },
+    {
+      "id": "forest-8",
+      "filename": "corbett-fire.jpg",
+      "caption": "This image displays forest woodland vegetation and dry tree conditions in Jim Corbett National Park, documenting wildlife habitat and forest landscape. Jim Corbett National Park, established in 1936, was India's first national park and remains one of the country's most prominent tiger reserves. Change detection over forest areas like this feeds into national reporting on tree cover, carbon storage, and biodiversity protection. As pressure on forest land from agriculture and development continues, monitoring landscapes like this helps balance conservation with other land-use needs. This frame was captured by ResourceSat-2 on 1 February 2026, forming part of an ongoing time series of observations over the area. Located at approximately 29.13°N, 79.45°E, this scene is part of SatQuery's expanding forest-cover coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-02-01",
+      "latitude": 29.1275,
+      "longitude": 79.4502
+    },
+    {
+      "id": "forest-9",
+      "filename": "munnar-plantation.jpg",
+      "caption": "Satellite imagery reveals green tea plantation vegetation on hillsides and lush vegetation coverage in Munnar, showing agricultural plantation landscape. Munnar's rolling tea plantations were established during the colonial era and remain one of Kerala's most economically important agricultural landscapes. Forest-cover imagery like this supports conservation authorities in tracking deforestation, regrowth, and the boundaries of protected habitat. Healthy forest cover in areas like this also plays a role in regulating local rainfall patterns and protecting watersheds downstream. This frame was captured by ResourceSat-2 on 4 February 2026, forming part of an ongoing time series of observations over the area. Located at approximately 10.14°N, 77.05°E, this scene is part of SatQuery's expanding forest-cover coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-02-04",
+      "latitude": 10.1404,
+      "longitude": 77.053
+    },
+    {
+      "id": "forest-10",
+      "filename": "kaziranga-forest.jpg",
+      "caption": "This image shows grassland vegetation and forest wetland ecosystem features in Kaziranga National Park, documenting one-horned rhino habitat and wildlife conservation. Kaziranga National Park is a UNESCO World Heritage Site and home to the majority of the world's remaining one-horned rhinoceros population. This kind of frame is used to monitor wildlife corridors and assess how fragmented or continuous forest habitat remains over time. Because many of these forests host endangered or endemic species, tracking their extent and condition is a conservation priority. This frame was captured by ResourceSat-2 on 7 February 2026, forming part of an ongoing time series of observations over the area. Located at approximately 26.60°N, 93.16°E, this scene is part of SatQuery's expanding forest-cover coverage across India.",
+      "instrument": "ResourceSat-2",
+      "date": "2026-02-07",
+      "latitude": 26.5968,
+      "longitude": 93.1568
+    }
+  ]
+}
