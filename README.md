@@ -195,7 +195,7 @@ python tools/embed_images.py
 | Team Member | [sudhamanikandan206](https://github.com/sudhamanikandan206) |
 | Team Member | [archanas126002-bit](https://github.com/archanas126002-bit) |
 | Team Member | [Aishukv13-nebula](https://github.com/Aishukv13-nebula) |
-| Team Member | [advikamannan]_(https://github.com/advikamannan) |
+| Team Member | [advikamannan](https://github.com/advikamannan) | 
 
 ---
 
