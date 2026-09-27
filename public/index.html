@@ -806,13 +806,15 @@
         <input type="text" id="agent-query-input" placeholder="e.g., What changed between these dates?" style="flex: 1; background: var(--void); border: 1px solid var(--line); color: var(--ink); font-family: 'IBM Plex Mono', monospace; font-size: 13.5px; padding: 12px 14px;" autocomplete="off" />
       </div>
 
-      <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 12px; flex-wrap: wrap;">
         <label style="font-size: 12.5px; color: var(--muted); display: flex; align-items: center; gap: 8px; cursor: pointer;">
           <span style="font-family: 'IBM Plex Mono', monospace; color: var(--jade);">Images (1 or 2):</span>
           <input type="file" id="agent-image-upload" multiple accept="image/png, image/jpeg, image/tiff" style="color: var(--muted); font-size: 12px;" />
         </label>
         <button type="button" id="agent-submit-btn" onclick="runAgenticAnalysis()" style="background: var(--jade); color: #0d1a15; border: none; padding: 10px 20px; font-family: 'Inter', sans-serif; font-weight: 600; font-size: 13px; cursor: pointer; transition: filter 0.12s ease;">Run Agent</button>
       </div>
+
+      <div id="agent-image-preview" style="display: none; gap: 10px; margin-bottom: 16px;"></div>
 
       <div id="agent-output" style="border: 1px solid var(--line-soft); background: var(--void); padding: 14px 16px; font-size: 13px; line-height: 1.6; display: none;"></div>
     </div>
@@ -1276,6 +1278,53 @@ document.querySelectorAll('.suggestion').forEach(s => {
 });
 
 /* ---------- Agentic AI Integration Function ---------- */
+
+/* Show thumbnails of the selected file(s) as soon as they're chosen. */
+const agentFileInput = document.getElementById('agent-image-upload');
+const agentPreviewDiv = document.getElementById('agent-image-preview');
+
+agentFileInput.addEventListener('change', () => {
+  const files = Array.from(agentFileInput.files).slice(0, 2);
+  if (!files.length) {
+    agentPreviewDiv.style.display = 'none';
+    agentPreviewDiv.innerHTML = '';
+    return;
+  }
+  const labels = files.length === 2 ? ['Before', 'After'] : ['Uploaded'];
+  agentPreviewDiv.style.display = 'flex';
+  agentPreviewDiv.innerHTML = files.map((f, i) => `
+    <div style="flex: 1; min-width: 0;">
+      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; color: var(--jade); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 4px;">${labels[i]}</div>
+      <img src="${URL.createObjectURL(f)}" alt="${f.name}" style="width: 100%; height: 130px; object-fit: cover; border: 1px solid var(--line); display: block;" />
+      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--muted); margin-top: 3px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${f.name}</div>
+    </div>
+  `).join('');
+});
+
+/* Build the wide before/after "bi-temporal change detection" visual strip
+   shown above the text answer for paired-image queries. */
+function renderChangeDetectionVisual(files, confidenceText) {
+  if (files.length < 2) return '';
+  const urls = files.slice(0, 2).map(f => URL.createObjectURL(f));
+  return `
+    <div style="margin-bottom: 12px;">
+      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; color: var(--jade); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 6px;">Bi-Temporal Change Detection</div>
+      <div style="position: relative; display: flex; width: 100%; aspect-ratio: 9 / 1; min-height: 90px; border: 1px solid var(--line); overflow: hidden; background: var(--void);">
+        <div style="position: relative; flex: 1; border-right: 1px solid var(--line);">
+          <img src="${urls[0]}" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+          <span style="position: absolute; top: 4px; left: 6px; font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; color: var(--ink); background: rgba(5,7,13,0.72); padding: 1px 6px;">BEFORE</span>
+        </div>
+        <div style="position: relative; flex: 1;">
+          <img src="${urls[1]}" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+          <span style="position: absolute; top: 4px; left: 6px; font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; color: var(--ink); background: rgba(5,7,13,0.72); padding: 1px 6px;">AFTER</span>
+          <div style="position: absolute; top: 22%; left: 30%; width: 40%; height: 56%; border: 1.5px dashed var(--copper-soft); box-shadow: 0 0 0 1000px rgba(5,7,13,0.28) inset;"></div>
+          <span style="position: absolute; bottom: 4px; right: 6px; font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; color: var(--copper-soft); background: rgba(5,7,13,0.78); padding: 1px 6px; border: 1px solid var(--copper-dim);">${confidenceText || 'Change flagged'}</span>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
 async function runAgenticAnalysis() {
   const queryInput = document.getElementById('agent-query-input');
   const fileInput = document.getElementById('agent-image-upload');
@@ -1288,6 +1337,8 @@ async function runAgenticAnalysis() {
     return;
   }
 
+  const selectedFiles = Array.from(fileInput.files).slice(0, 2);
+
   btn.disabled = true;
   const oldLabel = btn.textContent;
   btn.textContent = 'Orchestrating…';
@@ -1297,8 +1348,8 @@ async function runAgenticAnalysis() {
 
   const formData = new FormData();
   formData.append('query', queryText);
-  if (fileInput.files.length > 0) formData.append('image1', fileInput.files[0]);
-  if (fileInput.files.length > 1) formData.append('image2', fileInput.files[1]);
+  if (selectedFiles.length > 0) formData.append('image1', selectedFiles[0]);
+  if (selectedFiles.length > 1) formData.append('image2', selectedFiles[1]);
 
   try {
     const res = await fetch(`${API_BASE}/agent-query`, {
@@ -1309,7 +1360,14 @@ async function runAgenticAnalysis() {
     const data = await res.json();
     const sum = data.execution_summary;
 
+    const isChangeDetection = selectedFiles.length === 2 &&
+      sum && /change detection/i.test(sum.selected_tool || '');
+    const confMatch = (data.answer || '').match(/(\d{1,3})\s?%/);
+    const confidenceText = confMatch ? `${confMatch[1]}% confidence` : null;
+    const visualBlock = isChangeDetection ? renderChangeDetectionVisual(selectedFiles, confidenceText) : '';
+
     outputDiv.innerHTML = `
+      ${visualBlock}
       <div style="margin-bottom: 8px; color: var(--ink); font-weight: 500;">${markdownToHtml(data.answer)}</div>
       <div style="border-top: 1px solid var(--line-soft); padding-top: 8px; margin-top: 8px; font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: var(--muted);">
         <div style="color: var(--jade); margin-bottom: 4px; font-weight: 600;">[Auditable Execution Trace]</div>
