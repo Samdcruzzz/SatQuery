@@ -1290,7 +1290,25 @@ agentFileInput.addEventListener('change', () => {
     agentPreviewDiv.innerHTML = '';
     return;
   }
-  const labels = files.length === 2 ? ['Before', 'After'] : ['Uploaded'];
+
+  if (files.length === 1) {
+    const f = files[0];
+    agentPreviewDiv.style.display = 'flex';
+    agentPreviewDiv.innerHTML = `
+      <div style="display: flex; align-items: flex-start; gap: 16px; width: 100%;">
+        <div style="flex: 0 0 auto; min-width: 0;">
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; color: var(--jade); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 4px;">Uploaded</div>
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--muted); max-width: 160px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${f.name}</div>
+        </div>
+        <div style="flex: 1; max-width: 480px; aspect-ratio: 16 / 9; border: 1px solid var(--line); background: var(--void); overflow: hidden;">
+          <img src="${URL.createObjectURL(f)}" alt="${f.name}" style="width: 100%; height: 100%; object-fit: contain; display: block;" />
+        </div>
+      </div>
+    `;
+    return;
+  }
+
+  const labels = ['Before', 'After'];
   agentPreviewDiv.style.display = 'flex';
   agentPreviewDiv.innerHTML = files.map((f, i) => `
     <div style="flex: 1; min-width: 0;">
