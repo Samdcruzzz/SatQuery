@@ -1325,19 +1325,29 @@ function renderChangeDetectionVisual(files, confidenceText) {
   if (files.length < 2) return '';
   const urls = files.slice(0, 2).map(f => URL.createObjectURL(f));
   return `
-    <div style="margin-bottom: 12px;">
-      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; color: var(--jade); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 6px;">Bi-Temporal Change Detection</div>
-      <div style="position: relative; display: flex; width: 100%; aspect-ratio: 9 / 1; min-height: 90px; border: 1px solid var(--line); overflow: hidden; background: var(--void);">
-        <div style="position: relative; flex: 1; border-right: 1px solid var(--line);">
-          <img src="${urls[0]}" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
-          <span style="position: absolute; top: 4px; left: 6px; font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; color: var(--ink); background: rgba(5,7,13,0.72); padding: 1px 6px;">BEFORE</span>
+    <div style="margin-bottom: 14px; border: 1px solid var(--line); background: var(--void-2);">
+      <div style="padding: 8px 12px; border-bottom: 1px solid var(--line); font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; color: var(--jade); text-transform: uppercase; letter-spacing: 0.04em;">Bi-Temporal Change Detection</div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line);">
+        <div>
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; color: var(--muted); text-align: center; padding: 6px 0; background: var(--void);">BEFORE</div>
+          <div style="width: 100%; aspect-ratio: 4 / 3; background: var(--void); display: flex; align-items: center; justify-content: center; overflow: hidden;">
+            <img src="${urls[0]}" style="width: 100%; height: 100%; object-fit: contain; display: block;" />
+          </div>
         </div>
-        <div style="position: relative; flex: 1;">
-          <img src="${urls[1]}" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
-          <span style="position: absolute; top: 4px; left: 6px; font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; color: var(--ink); background: rgba(5,7,13,0.72); padding: 1px 6px;">AFTER</span>
-          <div style="position: absolute; top: 22%; left: 30%; width: 40%; height: 56%; border: 1.5px dashed var(--copper-soft); box-shadow: 0 0 0 1000px rgba(5,7,13,0.28) inset;"></div>
-          <span style="position: absolute; bottom: 4px; right: 6px; font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; color: var(--copper-soft); background: rgba(5,7,13,0.78); padding: 1px 6px; border: 1px solid var(--copper-dim);">${confidenceText || 'Change flagged'}</span>
+        <div>
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; color: var(--muted); text-align: center; padding: 6px 0; background: var(--void);">AFTER</div>
+          <div style="position: relative; width: 100%; aspect-ratio: 4 / 3; background: var(--void); display: flex; align-items: center; justify-content: center; overflow: hidden;">
+            <img src="${urls[1]}" style="width: 100%; height: 100%; object-fit: contain; display: block;" />
+            <div style="position: absolute; top: 12%; left: 55%; width: 32%; height: 32%; border: 1.5px dashed var(--copper-soft); pointer-events: none;"></div>
+          </div>
         </div>
+      </div>
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 12px; flex-wrap: wrap;">
+        <div style="display: flex; align-items: center; gap: 6px; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; color: var(--muted);">
+          <span style="display: inline-block; width: 12px; height: 12px; border: 1.5px dashed var(--copper-soft);"></span>
+          Detected change region
+        </div>
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; color: var(--copper-soft); border: 1px solid var(--copper-dim); padding: 2px 8px;">${confidenceText || 'Change flagged'}</div>
       </div>
     </div>
   `;
